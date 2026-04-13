@@ -1,0 +1,18 @@
+:root {
+  /* Neutrals */
+  --white: #ffffff;
+  --black: #000000;
+  
+
+  /* Brand Colors */
+  --primary: #9AE600;
+  --primary-500: #77b004; /* Base Brand */
+  --primary-600: #547d02;
+
+  /* System Colors */
+  --error: #ef4444;
+  --success: #22c55e;
+}
+.text-white {
+    color: var(--white);
+}

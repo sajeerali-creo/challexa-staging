@@ -1,0 +1,226 @@
+header {
+    min-height: 80px;
+    border-bottom: 1px solid rgb(255 255 255 / 22%);
+    background: #000;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+
+    nav {
+        display: flex;
+
+        li {
+            a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 14px;
+                padding: 0.5rem 1rem;
+                transition: color 0.3s ease;
+                font-family: "Orbitron", sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+
+                &:hover {
+                    color: var(--primary);
+                    /* Tomato color on hover */
+                }
+            }
+        }
+    }
+
+    .active {
+        color: var(--primary) !important;
+    }
+}
+
+.search-box {
+    position: relative;
+
+    .search-icon {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 42px;
+        width: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--white);
+        border-radius: 10px;
+    }
+
+    input {
+        padding-left: 40px;
+        background-color: #1C1C1C;
+        border: 1px solid #272727;
+    }
+}
+
+.head-rule {
+    box-sizing: border-box;
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px 8px 16px;
+    background: linear-gradient(90deg, #2e303d 0%, rgba(43, 64, 189, 0) 100%);
+    gap: 10px;
+    border-radius: 4px;
+    font-family: "Orbitron", sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.tab-match {
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 16px;
+        box-shadow: inset 0.421531111242075px 0px 0px -1.6666666666666665px rgba(255, 255, 255, 0.94), inset 1.60197331227042px 0px 0px -3.333333333333333px rgba(255, 255, 255, 0.77), inset 7px 0px 0px -5px rgba(255, 255, 255, 0);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.11) 0%, rgba(171, 171, 171, 0.05) 100%);
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        color: var(--white);
+        letter-spacing: 2px;
+        font-size: 12px;
+        font-family: "Orbitron", sans-serif;
+        text-transform: uppercase;
+        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        font-weight: 600;
+        min-width: 130px;
+        &:hover {
+            box-shadow: inset 0.421531111242075px 0px 0px -1.6666666666666665px rgba(255, 255, 255, 0.94), inset 1.60197331227042px 0px 0px -3.333333333333333px rgba(255, 255, 255, 0.77), inset 7px 0px 0px -5px rgba(255, 255, 255, 0);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.33) 0%, rgba(171, 171, 171, 0.05) 100%);
+            color: var(--primary);
+        }
+    }
+
+    .active {
+        box-shadow: inset 0.421531111242075px 0px 0px -1.6666666666666665px rgba(255, 255, 255, 0.94), inset 1.60197331227042px 0px 0px -3.333333333333333px rgba(255, 255, 255, 0.77), inset 7px 0px 0px -5px rgba(255, 255, 255, 0);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.33) 0%, rgba(171, 171, 171, 0.05) 100%);
+        color: var(--primary);
+    }
+}
+
+.box-group {
+    width: 100%;
+    height: min-content;
+    padding: 10px;
+    box-shadow: inset 0.421531111242075px 0px 0px -1.6666666666666665px rgba(255, 255, 255, 0.94), inset 1.60197331227042px 0px 0px -3.333333333333333px rgba(255, 255, 255, 0.77), inset 7px 0px 0px -5px rgba(255, 255, 255, 0);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.11) 0%, rgba(171, 171, 171, 0.05) 100%);
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    .hexagon {
+        width: 56px;
+        height: 63px;
+        font-weight: bold;
+        background: linear-gradient(180deg, #fefefe 0%, #363636 100%);
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .a {
+        &:hover {
+            background: linear-gradient(180deg, #fefefe 0%, #9ae600 100%);
+        }
+    }
+
+    .a-active {
+        background: linear-gradient(180deg, #fefefe 0%, #9ae600 100%);
+    }
+
+    .b {
+        &:hover {
+            background: linear-gradient(180deg, #fefefe 0%, #757aff 100%);
+        }
+
+    }
+
+    .b-active {
+        background: linear-gradient(180deg, #fefefe 0%, #757aff 100%);
+    }
+
+    .c {
+        &:hover {
+            background: linear-gradient(180deg, #fefefe 0%, #E65800 100%);
+        }
+    }
+
+    .c-active {
+        background: linear-gradient(180deg, #fefefe 0%, #E65800 100%);
+    }
+
+    .d {
+        &:hover {
+            background: linear-gradient(180deg, #fefefe 0%, #C46D6F 100%);
+        }
+    }
+
+    .d-active {
+        background: linear-gradient(180deg, #fefefe 0%, #C46D6F 100%);
+    }
+
+    .e {
+        &:hover {
+            background: linear-gradient(180deg, #fefefe 0%, #00E6CF 100%);
+        }
+    }
+
+    .e-active {
+        background: linear-gradient(180deg, #fefefe 0%, #00E6CF 100%);
+    }
+
+    .f {
+        &:hover {
+            background: linear-gradient(180deg, #fefefe 0%, #E6C000 100%);
+        }
+
+    }
+
+    .f-active {
+        background: linear-gradient(180deg, #fefefe 0%, #E6C000 100%);
+    }
+}
+
+.mobile-scroll {
+    overflow-x: scroll;
+}
+
+@media (min-width:992px) {
+    .mobile-scroll {
+        overflow-x: auto;
+    }
+}
+
+.sub-tabs {
+    a {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 12px;
+        background-color: rgba(255, 255, 255, 0.07);
+        overflow: var(--overflow-clip-fallback, clip);
+        border-radius: 10px;
+        font-family: "Orbitron", sans-serif;
+        color: var(--white);
+        font-size: 12px;
+        font-weight: 600;
+
+        &:hover {
+            background-color: var(--primary);
+            color: var(--black);
+        }
+
+    }
+
+    .active {
+        background-color: var(--primary);
+        color: var(--black);
+    }
+}

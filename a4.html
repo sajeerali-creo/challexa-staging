@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challexa</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
+    <!-- main style -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- icon font -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="d-flex justify-content-between align-items-center p-8 px-16 inner-head">
+        <a href="/">
+            <img src="img/logo-icon.svg" class="h-30" alt>
+        </a>
+        <button class="open-btn d-lg-none" onclick="openMenu()"><i class="ti ti-menu-2"></i></button>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" onclick="closeMenu()"></div>
+    <!-- Offcanvas Sidebar -->
+    <div id="offcanvas">
+        <div class="d-flex justify-content-between pb-16">
+            <a href="#">
+                <img src="img/logo-icon.svg" class="h-30" alt>
+            </a>
+            <button class="close-btn" onclick="closeMenu()"><i class="ti ti-x text-white"></i></button>
+        </div>
+
+        <div class="Sidebar">
+            <div class="black-box d-flex justify-content-center flex-column align-items-center mb-16">
+                <div class="logo-tournment">
+                    <img src="img/tournment-img.png" alt="">
+                </div>
+                <div class="mt-16 ">
+                    <h1 class="h2 text-gradient">NBD Tour</h1>
+                </div>
+                <div class="mt-8 d-flex gap-16">
+                    <div class="d-flex align-items-center gap-4">
+                        <i class="ti ti-stopwatch text-brand fs-12"></i>
+                        <span class="text-white opacity-50 fs-12">08:00PM</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-4">
+                        <i class="ti ti-calendar-due text-brand fs-12"></i>
+                        <span class="text-white opacity-50 fs-12">20/03/2025</span>
+                    </div>
+                </div>
+            </div>
+            <a href="tournment-detail.html" class="menu-list">
+                <i class="ti ti-eye"></i>overview
+            </a>
+            <div>
+                <img src="img/line.svg" alt="">
+            </div>
+            <a href="tournment-player.html" class="menu-list">
+                <i class="ti ti-user"></i>Players
+            </a>
+            <div>
+                <img src="img/line.svg" alt="">
+            </div>
+            <a href="tournment-matches-a.html" class="menu-list active">
+                <i class="ti ti-layout-grid"></i>Matches
+            </a>
+            <div>
+                <img src="img/line.svg" alt="">
+            </div>
+            <a href="tournment-check-in.html" class="menu-list">
+                <i class="ti ti-users"></i>check-in
+            </a>
+            <div>
+                <img src="img/line.svg" alt="">
+            </div>
+            <a href="tournment-draw.html" class="menu-list">
+                <i class="ti ti-git-branch"></i>Draw
+            </a>
+        </div>
+    </div>
+
+    <section class="d-flex">
+        <div class="Sidebar d-none d-lg-block">
+            <div class="black-box d-flex justify-content-center flex-column align-items-center mb-48">
+                <div class="logo-tournment">
+                    <img src="img/tournment-img.png" alt="">
+                </div>
+                <div class="mt-16 ">
+                    <h1 class="h2 text-gradient">NBD Tour</h1>
+                </div>
+                <div class="mt-8 d-flex gap-4">
+                    <div class="d-flex align-items-center gap-4">
+                        <i class="ti ti-stopwatch text-brand"></i>
+                        <span class="text-white opacity-50 fs-12">08:00PM</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-4">
+                        <i class="ti ti-calendar-due text-brand"></i>
+                        <span class="text-white opacity-50 fs-12">20/03/2025</span>
+                    </div>
+                </div>
+            </div>
+            <a href="tournment-detail.html" class="menu-list">
+                <i class="ti ti-eye"></i>overview
+            </a>
+            <div>
+                <img src="img/line.svg" alt="">
+            </div>
+            <a href="tournment-player.html" class="menu-list">
+                <i class="ti ti-user"></i>Players
+            </a>
+            <div>
+                <img src="img/line.svg" alt="">
+            </div>
+            <a href="tournment-matches-a.html" class="menu-list active">
+                <i class="ti ti-layout-grid"></i>Matches
+            </a>
+            <div>
+                <img src="img/line.svg" alt="">
+            </div>
+            <a href="tournment-check-in.html" class="menu-list">
+                <i class="ti ti-users"></i>check-in
+            </a>
+            <div>
+                <img src="img/line.svg" alt="">
+            </div>
+            <a href="tournment-draw.html" class="menu-list">
+                <i class="ti ti-git-branch"></i>Draw
+            </a>
+        </div>
+
+        <div class="body-section w-100 no-padding-top">
+
+            <div class="p-24 p-lg-48 text-white">
+                <div class="d-flex gap-16 w-100 tab-match mb-16">
+                    <a href="tournment-matches-a.html" class="active">schedule</a>
+                    <a href="timeline-w1.html">Timeline</a>
+                </div>
+                <div class="d-flex gap-16 mobile-scroll mb-16">
+                    <a href="tournment-matches-a.html" class="box-group">
+                        <div class="hexagon font-orbit a-active">A</div>
+                    </a>
+                    <a href="tournment-matches-b.html" class="box-group">
+                        <div class="hexagon font-orbit b">B</div>
+                    </a>
+                    <a href="tournment-matches-c.html" class="box-group">
+                        <div class="hexagon font-orbit c">C</div>
+                    </a>
+                    <a href="tournment-matches-d.html" class="box-group">
+                        <div class="hexagon font-orbit d">D</div>
+                    </a>
+                    <a href="tournment-matches-e.html" class="box-group">
+                        <div class="hexagon font-orbit e">E</div>
+                    </a>
+                    <a href="tournment-matches-f.html" class="box-group">
+                        <div class="hexagon font-orbit f">F</div>
+                    </a>
+                </div>
+
+                <div class="d-flex mobile-scroll mb-48 sub-tabs gap-16">
+                    <a href="tournment-matches-a.html">A1</a>
+                    <a href="a2.html">A2</a>
+                    <a href="a3.html">A3</a>
+                    <a href="a4.html" class="active">A4</a>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="d-flex gap-16 align-items-center mb-16">
+                            <div class="d-flex gap-8 align-items-center font-orbit fs-12 text-uppercase letter-space">
+                                <div class="small-head">
+                                    <img src="img/head-lady.avif" alt="">
+                                </div>
+                                <span class="fi fi-ae fs-12"></span>&nbsp;steev
+                            </div>
+                            <div class="d-flex gap-8 align-items-center font-orbit fs-12 text-uppercase letter-space">
+                                <div class="small-head">
+                                    <img src="img/head-lady.avif" alt="">
+                                </div>
+                                <span class="fi fi-ae fs-12"></span>&nbsp;steev
+                            </div>
+                        </div>
+                        <!-- now playing -->
+                        <div class="box-card-playing mt-16 mb-16">
+                            <div class="fs-12 font-orbit text-uppercase opacity-50 letter-space">Now Playing</div>
+                            <div class="card-inside mt-8">
+                                <div class="w-100 d-flex justify-content-between align-items-center pb-8">
+                                    <div class="d-flex gap-4 text-uppercase fs-12 opacity-50 align-items-center">
+                                        <div>Wave 1</div>
+                                        <div>Court 1</div>
+                                    </div>
+                                    <div class="d-flex gap-4 text-uppercase align-items-center">
+                                        <div class="fs-12 opacity-50">In 30 mins</div>
+                                        <div><i class="ti ti-stopwatch"></i></div>
+                                    </div>
+                                </div>
+                                <div class="line mt-4 mb-16"></div>
+                                <div class="d-flex justify-content-center gap-16 align-items-center">
+                                    <div class="fs-12 opacity-50">A3</div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div>VS</div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="fs-12 opacity-50">A1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- next -->
+                        <div class="box-card-playing mt-16 mb-16">
+                            <div class="fs-12 font-orbit text-uppercase opacity-50 letter-space">Next</div>
+                            <div class="card-inside mt-8">
+                                <div class="w-100 d-flex justify-content-between align-items-center pb-8">
+                                    <div class="d-flex gap-4 text-uppercase fs-12 opacity-50 align-items-center">
+                                        <div>Wave 1</div>
+                                        <div>Court 1</div>
+                                    </div>
+                                    <div class="d-flex gap-4 text-uppercase align-items-center">
+                                        <div class="fs-12 opacity-50">In 30 mins</div>
+                                        <div><i class="ti ti-stopwatch"></i></div>
+                                    </div>
+                                </div>
+                                <div class="line mt-4 mb-16"></div>
+                                <div class="d-flex justify-content-center gap-16 align-items-center">
+                                    <div class="fs-12 opacity-50">A3</div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div>VS</div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="fs-12 opacity-50">A4</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- on deck -->
+                        <div class="box-card-playing mt-16 mb-16">
+                            <div class="fs-12 font-orbit text-uppercase opacity-50 letter-space">On deck</div>
+                            <div class="card-inside mt-8">
+                                <div class="w-100 d-flex justify-content-between align-items-center pb-8">
+                                    <div class="d-flex gap-4 text-uppercase fs-12 opacity-50 align-items-center">
+                                        <div>Wave 1</div>
+                                        <div>Court 1</div>
+                                    </div>
+                                    <div class="d-flex gap-4 text-uppercase align-items-center">
+                                        <div class="fs-12 opacity-50">In 30 mins</div>
+                                        <div><i class="ti ti-stopwatch"></i></div>
+                                    </div>
+                                </div>
+                                <div class="line mt-4 mb-16"></div>
+                                <div class="d-flex justify-content-center gap-16 align-items-center">
+                                    <div class="fs-12 opacity-50">A3</div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div>VS</div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="fs-12 opacity-50">A4</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="fs-12 font-orbit opacity-50 text-uppercase letter-space mb-16">Previous matches</h3>
+                        <div class="card-inside mt-8 justify-content-center mb-16">
+                            <div class="w-100 d-flex justify-content-center align-items-center pb-8">
+                                <div class="d-flex gap-4 text-uppercase fs-12 opacity-50 align-items-center">
+                                    <div>Wave 1</div>
+                                    <div>Court 1</div>
+                                </div>
+                            </div>
+                            <div class="line mt-4 mb-16"></div>
+                            <div class="d-flex justify-content-center gap-16 align-items-center mb-16">
+                                <div class="fs-12 opacity-50">A3</div>
+                                <div class="x-small-head">
+                                    <img src="img/head-lady.avif" alt="">
+                                </div>
+                                <div class="x-small-head">
+                                    <img src="img/head-lady.avif" alt="">
+                                </div>
+                                <div>VS</div>
+                                <div class="x-small-head">
+                                    <img src="img/head-lady.avif" alt="">
+                                </div>
+                                <div class="x-small-head">
+                                    <img src="img/head-lady.avif" alt="">
+                                </div>
+                                <div class="fs-12 opacity-50">A1</div>
+                            </div>
+                            <div class="line mt-4 mb-16"></div>
+                            <div class="d-flex justify-content-center">
+                                <div class="w-label">WON 6-3</div>
+                            </div>
+                        </div>
+                        <div class="card-inside mt-8 justify-content-center">
+                            <div class="w-100 d-flex justify-content-center align-items-center pb-8">
+                                <div class="d-flex gap-4 text-uppercase fs-12 opacity-50 align-items-center">
+                                    <div>Wave 1</div>
+                                    <div>Court 1</div>
+                                </div>
+                            </div>
+                            <div class="line mt-4 mb-16"></div>
+                            <div class="d-flex justify-content-center gap-16 align-items-center mb-16">
+                                <div class="fs-12 opacity-50">A3</div>
+                                <div class="x-small-head">
+                                    <img src="img/head-lady.avif" alt="">
+                                </div>
+                                <div class="x-small-head">
+                                    <img src="img/head-lady.avif" alt="">
+                                </div>
+                                <div>VS</div>
+                                <div class="x-small-head">
+                                    <img src="img/head-lady.avif" alt="">
+                                </div>
+                                <div class="x-small-head">
+                                    <img src="img/head-lady.avif" alt="">
+                                </div>
+                                <div class="fs-12 opacity-50">A4</div>
+                            </div>
+                            <div class="line mt-4 mb-16"></div>
+                            <div class="d-flex justify-content-center">
+                                <div class="l-label">LOSS 6-7</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <h3 class="fs-12 font-orbit text-gradient text-uppercase">standings</h3>
+                        <div class="d-flex mt-16 align-items-center w-100">
+                            <div class="w-fixed bg-h">TEAM</div>
+                            <div class="bg-h strip w-100">MP</div>
+                            <div class="bg-h w-100">w</div>
+                            <div class="bg-h strip w-100">l</div>
+                            <div class="bg-h w-100">G(W-L)</div>
+                            <div class="bg-h strip w-100">GO</div>
+                            <div class="bg-h w-100 round-last">r</div>
+                        </div>
+                        <div class="d-flex mt-16 align-items-center w-100">
+                            <div class="w-fixed2 bg-h2 d-flex gap-8">
+                                <div class="hexagon font-orbit a-active">A1</div>
+                                <div class="d-flex">
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="x-small-head over-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-h2 w-100 strip2">3</div>
+                            <div class="bg-h2 w-100">1</div>
+                            <div class="bg-h2 strip2 w-100">2</div>
+                            <div class="bg-h2 w-100">11-7</div>
+                            <div class="bg-h2 strip2 w-100">61</div>
+                            <div class="bg-h2 w-100">3</div>
+                        </div>
+                        <div class="d-flex mt-16 align-items-center w-100">
+                            <div class="w-fixed2 bg-h2 d-flex gap-8">
+                                <div class="hexagon font-orbit a-active">A2</div>
+                                <div class="d-flex">
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="x-small-head over-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-h2 w-100 strip2">3</div>
+                            <div class="bg-h2 w-100">1</div>
+                            <div class="bg-h2 strip2 w-100">2</div>
+                            <div class="bg-h2 w-100">11-7</div>
+                            <div class="bg-h2 strip2 w-100">61</div>
+                            <div class="bg-h2 w-100">3</div>
+                        </div>
+                        <div class="d-flex mt-16 align-items-center w-100">
+                            <div class="w-fixed2 bg-h2 d-flex gap-8">
+                                <div class="hexagon font-orbit a-active">A3</div>
+                                <div class="d-flex">
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="x-small-head over-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-h2 w-100 strip2">3</div>
+                            <div class="bg-h2 w-100">1</div>
+                            <div class="bg-h2 strip2 w-100">2</div>
+                            <div class="bg-h2 w-100">11-7</div>
+                            <div class="bg-h2 strip2 w-100">61</div>
+                            <div class="bg-h2 w-100">3</div>
+                        </div>
+                        <div class="d-flex mt-16 align-items-center w-100 mb-48">
+                            <div class="w-fixed2 bg-h2 d-flex gap-8">
+                                <div class="hexagon font-orbit a-active">A4</div>
+                                <div class="d-flex">
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="x-small-head over-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-h2 w-100 strip2">3</div>
+                            <div class="bg-h2 w-100">1</div>
+                            <div class="bg-h2 strip2 w-100">2</div>
+                            <div class="bg-h2 w-100">11-7</div>
+                            <div class="bg-h2 strip2 w-100">61</div>
+                            <div class="bg-h2 w-100">3</div>
+                        </div>
+                        <h3 class="fs-12 font-orbit text-gradient text-uppercase mb-16">Waves Round</h3>
+                        <div class="card-inside mt-8 justify-content-center">
+                            <div class="d-md-flex justify-content-between align-items-center">
+                                <div class="fs-12 opacity-50 text-center text-uppercase">wave 1</div>
+                                <div class="d-flex gap-8 align-items-center justify-content-center mt-16 mb-16">
+                                    <div class="fs-12 opacity-50">A1</div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div>VS</div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="fs-12 opacity-50">A2</div>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="btn-small report-score-btn">Report</a>
+                                    <!-- after score -->
+                                    <!-- <div class="d-flex gap-4">
+                                         <span class="score-w">6</span>
+                                         <span class="score-l">4</span>
+                                     </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-inside mt-8 justify-content-center">
+                            <div class="d-md-flex justify-content-between align-items-center">
+                                <div class="fs-12 opacity-50 text-center text-uppercase">wave 1</div>
+                                <div class="d-flex gap-8 align-items-center justify-content-center mt-16 mb-16">
+                                    <div class="fs-12 opacity-50">A1</div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div>VS</div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="fs-12 opacity-50">A2</div>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="btn-small report-score-btn">Report</a>
+                                    <!-- after score -->
+                                    <!-- <div class="d-flex gap-4">
+                                         <span class="score-w">6</span>
+                                         <span class="score-l">4</span>
+                                     </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-inside mt-8 justify-content-center">
+                            <div class="d-md-flex justify-content-between align-items-center">
+                                <div class="fs-12 opacity-50 text-center text-uppercase">wave 1</div>
+                                <div class="d-flex gap-8 align-items-center justify-content-center mt-16 mb-16">
+                                    <div class="fs-12 opacity-50">A1</div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div>VS</div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="fs-12 opacity-50">A2</div>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="btn-small report-score-btn">Report</a>
+                                    <!-- after score -->
+                                    <!-- <div class="d-flex gap-4">
+                                         <span class="score-w">6</span>
+                                         <span class="score-l">4</span>
+                                     </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-inside mt-8 justify-content-center">
+                            <div class="d-md-flex justify-content-between align-items-center">
+                                <div class="fs-12 opacity-50 text-center text-uppercase">wave 1</div>
+                                <div class="d-flex gap-8 align-items-center justify-content-center mt-16 mb-16">
+                                    <div class="fs-12 opacity-50">A1</div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div>VS</div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="fs-12 opacity-50">A2</div>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="btn-small report-score-btn">Report</a>
+                                    <!-- after score -->
+                                    <!-- <div class="d-flex gap-4">
+                                         <span class="score-w">6</span>
+                                         <span class="score-l">4</span>
+                                     </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-inside mt-8 justify-content-center">
+                            <div class="d-md-flex justify-content-between align-items-center">
+                                <div class="fs-12 opacity-50 text-center text-uppercase">wave 1</div>
+                                <div class="d-flex gap-8 align-items-center justify-content-center mt-16 mb-16">
+                                    <div class="fs-12 opacity-50">A1</div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div>VS</div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="fs-12 opacity-50">A2</div>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="btn-small report-score-btn">Report</a>
+                                    <!-- after score -->
+                                    <!-- <div class="d-flex gap-4">
+                                         <span class="score-w">6</span>
+                                         <span class="score-l">4</span>
+                                     </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-inside mt-8 justify-content-center">
+                            <div class="d-md-flex justify-content-between align-items-center">
+                                <div class="fs-12 opacity-50 text-center text-uppercase">wave 1</div>
+                                <div class="d-flex gap-8 align-items-center justify-content-center mt-16 mb-16">
+                                    <div class="fs-12 opacity-50">A1</div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div>VS</div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="x-small-head">
+                                        <img src="img/head-lady.avif" alt="">
+                                    </div>
+                                    <div class="fs-12 opacity-50">A2</div>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="btn-small report-score-btn">Report</a>
+                                    <!-- after score -->
+                                    <!-- <div class="d-flex gap-4">
+                                         <span class="score-w">6</span>
+                                         <span class="score-l">4</span>
+                                     </div> -->
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <div class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header d-flex align-items-center justify-content-between">
+                <h2>REPORT</h2>
+                <button class="close-btn"><i class="ti ti-square-x"></i></button>
+            </div>
+
+
+            <div class="selection-section">
+                <label>ENTER YOUR 4-DIGIT TEAM CODE</label>
+                <div class="button-group">
+                    <input type="text" class="code-input w-100" value="CHA1">
+                </div>
+            </div>
+            <div class="score-section">
+                <div class="d-flex justify-content-between">
+                    <label>TEAM</label>
+                    <label>SOCRE</label>
+                </div>
+
+                <div class="score-row">
+                    <div class="team-info">
+                        <span class="team-id">A1</span>
+                        <div class="avatars">
+                            <img src="img/head-lady.avif" alt="p1">
+                            <img src="img/head-lady.avif" alt="p2">
+                        </div>
+                    </div>
+                    <input type="number" class="score-input" value="6">
+                </div>
+
+                <div class="score-row">
+                    <div class="team-info">
+                        <span class="team-id">A3</span>
+                        <div class="avatars">
+                            <img src="img/head-lady.avif" alt="p1">
+                            <img src="img/head-lady.avif" alt="p2">
+                        </div>
+                    </div>
+                    <input type="number" class="score-input" value="3">
+                </div>
+            </div>
+
+            <button class="submit-btn">Submit</button>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>

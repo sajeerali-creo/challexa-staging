@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challexa</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
+    <!-- main style -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- icon font -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+</head>
+
+<body>
+
+    <header class="d-flex justify-content-between align-items-center px-16">
+        <a href="/">
+            <img src="img/logo.svg" alt>
+        </a>
+        <nav class="d-none d-lg-block">
+            <ul class="d-flex gap-4">
+                <li class="text-paragraph text-white"><a href="/">Home</a></li>
+                <li class="text-paragraph text-white"><a href="register.html">Register</a></li>
+                <li class="text-paragraph text-white"><a href="about.html">About Challexa</a></li>
+                <li class="text-paragraph text-white"><a href="faq.html">FAQ</a></li>
+                <li class="text-paragraph text-white"><a href="sign-in.html">Sign In</a></li>
+                <li class="text-paragraph text-white"><a href="sign-up.html" class="text-brand">Sign Up</a></li>
+            </ul>
+        </nav>
+        <button class="open-btn d-lg-none" onclick="openMenu()"><i class="ti ti-menu-2"></i></button>
+    </header>
+
+    <!-- Overlay -->
+    <div id="overlay" onclick="closeMenu()"></div>
+    <!-- Offcanvas Sidebar -->
+    <div id="offcanvas">
+        <div class="d-flex justify-content-between pb-16">
+            <a href="#">
+                <img src="img/logo-icon.svg" alt>
+            </a>
+            <button class="close-btn" onclick="closeMenu()"><i class="ti ti-x text-white"></i></button>
+        </div>
+
+        <ul>
+            <li class="text-paragraph text-white"><a href="/">Home</a></li>
+            <li class="text-paragraph text-white"><a href="/register.html">Register</a></li>
+            <li class="text-paragraph text-white"><a href="/about.html">About Challexa</a></li>
+            <li class="text-paragraph text-white"><a href="/faq.html">FAQ</a></li>
+        </ul>
+
+        <ul>
+            <li class="text-paragraph text-white"><a href="sign-in.html">Sign In</a></li>
+            <li class="text-paragraph text-white"><a href="sign-up.html" class="text-brand">Sign Up</a></li>
+        </ul>
+
+        <ul>
+            <li class="pt-24"><a href="terms.html" class="small">Terms & Conditions</a></li>
+            <li class="text-paragraph text-white"><a href="privacy-policy.html" class="small">Privacy Policy</a></li>
+            <li class="text-paragraph text-white"><a href="#" class="small">Help</a></li>
+        </ul>
+    </div>
+
+    <section class="pt-48 pb-48">
+        <div class="container">
+            <h3 class="h3 text-white mb-16">PRIVACY POLICY</h3>
+            <div class="privacy-container">
+
+                <h3 class="h3 text-white mb-16 mt-24">🔐 CHALLEXA PRIVACY POLICY</h3>
+                <p class="text-paragraph text-white opacity-50"><strong>Effective Date:</strong> [Insert Date]</p>
+
+
+                <h3 class="h3 text-white mb-16 mt-24">1. Introduction</h3>
+                <p class="text-paragraph text-white opacity-50">
+                    Challexa respects your privacy and is committed to protecting your personal data.
+                </p>
+                <p class="text-paragraph text-white opacity-50">This Privacy Policy explains:</p>
+                <ul>
+                    <li class="text-paragraph text-white opacity-50">What data we collect</li>
+                    <li class="text-paragraph text-white opacity-50">How we use it</li>
+                    <li class="text-paragraph text-white opacity-50">How we protect it</li>
+                </ul>
+
+
+                <h3 class="h3 text-white mb-16 mt-24">2. Information We Collect</h3>
+
+                <h4 class="text-white h4 mb-8 mt-8">2.1 Personal Information</h4>
+                <ul>
+                    <li class="text-paragraph text-white opacity-50">Name</li>
+                    <li class="text-paragraph text-white opacity-50">Email address</li>
+                    <li class="text-paragraph text-white opacity-50">Profile photo</li>
+                </ul>
+
+                <h4 class="text-white h4 mb-8 mt-8">2.2 Competition Data</h4>
+                <ul>
+                    <li class="text-paragraph text-white opacity-50">Match results</li>
+                    <li class="text-paragraph text-white opacity-50">Rankings</li>
+                    <li class="text-paragraph text-white opacity-50">Badges</li>
+                    <li class="text-paragraph text-white opacity-50">Tournament participation</li>
+                </ul>
+
+                <h4 class="text-white h4 mb-8 mt-8">2.3 Technical Data</h4>
+                <ul>
+                    <li class="text-paragraph text-white opacity-50">Device information</li>
+                    <li class="text-paragraph text-white opacity-50">IP address</li>
+                    <li class="text-paragraph text-white opacity-50">Usage activity</li>
+                </ul>
+
+
+                <h3 class="h3 text-white mb-16 mt-24">3. How We Use Your Data</h3>
+                <p class="text-paragraph text-white opacity-50">We use your data to:</p>
+                <ul>
+                    <li class="text-paragraph text-white opacity-50">Provide platform services</li>
+                    <li class="text-paragraph text-white opacity-50">Manage tournaments and ladders</li>
+                    <li class="text-paragraph text-white opacity-50">Display rankings and profiles</li>
+                    <li class="text-paragraph text-white opacity-50">Communicate updates and notifications</li>
+                    <li class="text-paragraph text-white opacity-50">Improve platform performance</li>
+                </ul>
+
+
+                <h3 class="h3 text-white mb-16 mt-24">4. Data Sharing</h3>
+                <p class="text-paragraph text-white opacity-50">We may share data with:</p>
+                <ul>
+                    <li class="text-paragraph text-white opacity-50">Clubs and organizers (competition-related only)</li>
+                    <li class="text-paragraph text-white opacity-50">Service providers (hosting, analytics)</li>
+                </ul>
+                <p class="text-paragraph text-white opacity-50"><strong>We do not sell personal data.</strong></p>
+
+
+                <h3 class="h3 text-white mb-16 mt-24">5. Data Retention</h3>
+                <ul>
+                    <li class="text-paragraph text-white opacity-50">Account data is retained while your account is active</li>
+                    <li class="text-paragraph text-white opacity-50">Competition history may remain for ranking integrity</li>
+                    <li class="text-paragraph text-white opacity-50">Users may request deletion where legally permitted</li>
+                </ul>
+
+
+                <h3 class="h3 text-white mb-16 mt-24">6. Data Security</h3>
+                <p class="text-paragraph text-white opacity-50">We implement:</p>
+                <ul>
+                    <li class="text-paragraph text-white opacity-50">Secure servers</li>
+                    <li class="text-paragraph text-white opacity-50">Access controls</li>
+                    <li class="text-paragraph text-white opacity-50">Encryption where applicable</li>
+                </ul>
+                <p class="text-paragraph text-white opacity-50">However, no system is 100% secure.</p>
+
+
+                <h3 class="h3 text-white mb-16 mt-24">7. User Rights</h3>
+                <p class="text-paragraph text-white opacity-50">Depending on jurisdiction, you may:</p>
+                <ul>
+                    <li class="text-paragraph text-white opacity-50">Access your data</li>
+                    <li class="text-paragraph text-white opacity-50">Request corrections</li>
+                    <li class="text-paragraph text-white opacity-50">Request deletion</li>
+                    <li class="text-paragraph text-white opacity-50">Withdraw consent</li>
+                </ul>
+
+
+                <h3 class="h3 text-white mb-16 mt-24">8. Cookies</h3>
+                <p class="text-paragraph text-white opacity-50">Challexa uses cookies to:</p>
+                <ul>
+                    <li class="text-paragraph text-white opacity-50">Maintain sessions</li>
+                    <li class="text-paragraph text-white opacity-50">Improve user experience</li>
+                </ul>
+                <p class="text-paragraph text-white opacity-50">You may disable cookies via browser settings.</p>
+
+
+                <h3 class="h3 text-white mb-16 mt-24">9. International Use</h3>
+                <p class="text-paragraph text-white opacity-50">
+                    Data may be processed in different countries depending on hosting and services used.
+                    Appropriate safeguards are applied.
+                </p>
+
+
+                <h3 class="h3 text-white mb-16 mt-24">10. Changes to Privacy Policy</h3>
+                <p class="text-paragraph text-white opacity-50">
+                    We may update this policy from time to time.
+                    Material changes will be communicated to users.
+                </p>
+
+
+                <h3 class="h3 text-white mb-16 mt-24">11. Contact Us</h3>
+                <p class="text-paragraph text-white opacity-50">For privacy or legal concerns:</p>
+                <p class="text-paragraph text-white opacity-50">📧 hello@challexa.com</p>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- script -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>

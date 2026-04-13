@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+// flag icon
+@import url('https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css');
+
+body {
+  font-family: 'Rubik', sans-serif;
+  color: var(--black);
+}
+
+.h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 500;
+  background: linear-gradient(90deg, #9AE600 0%, #FFFFFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 500;
+  background: linear-gradient(90deg, #9AE600 0%, #FFFFFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.page-heading {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 500;
+  color: var(--white);
+
+  @media (min-width:992px) {
+    font-size: 24px;
+  }
+}
+
+.h2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.orbitron {
+  font-family: "Orbitron", sans-serif;
+}
+
+.h3 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.h4 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.text-brand {
+  color: var(--primary) !important;
+}
+
+.text-paragraph {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+.heading-block {
+  font-family: "Orbitron", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: block;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #2B41BD 0%, rgba(43, 65, 189, 0) 100%);
+  letter-spacing: 2px;
+}
+
+.label {
+  display: flex;
+  padding: 4px 8px;
+  background-color: rgb(119 230 0 / 32%);
+  color: var(--white);
+  height: 25px;
+  border-radius: 8px;
+  font-size: 10px;
+  align-items: center;
+}
+
+.closed {
+  background-color: rgb(255 0 0 / 35%);
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+.font-orbit {
+  font-family: "Orbitron", sans-serif;
+}
+
+.text-none {
+  text-transform: none;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-fullwidth {
+  text-transform: full-width;
+}
+
+.text-kana {
+  text-transform: full-size-kana;
+}
+.letter-space{
+  letter-spacing: 2px;
+}
+.font-weight-400{
+  font-weight: 400;
+}
+.text-orange{
+  color: #fc9453;
+}
+
+/* Font size utilities (px based) */
+
+.fs-4  { font-size: 4px !important; }
+.fs-6  { font-size: 6px !important; }
+.fs-8  { font-size: 8px !important; }
+.fs-10 { font-size: 10px !important; }
+.fs-12 { font-size: 12px !important; }
+.fs-14 { font-size: 14px !important; }
+.fs-16 { font-size: 16px !important; }
+.fs-18 { font-size: 18px !important; }
+.fs-20 { font-size: 20px !important; }
+.fs-22 { font-size: 22px !important; }
+.fs-24 { font-size: 24px !important; }
+.fs-26 { font-size: 26px !important; }
+.fs-28 { font-size: 28px !important; }
+.fs-30 { font-size: 30px !important; }
+.fs-32 { font-size: 32px !important; }
+.fs-34 { font-size: 34px !important; }
+.fs-36 { font-size: 36px !important; }
+.fs-38 { font-size: 38px !important; }
+.fs-40 { font-size: 40px !important; }
+.fs-42 { font-size: 42px !important; }
+.fs-44 { font-size: 44px !important; }
+.fs-46 { font-size: 46px !important; }
+.fs-48 { font-size: 48px !important; }
+
+.time-big-mob{
+  font-size: 20vw!important;
+  @media (min-width:767px) {
+    font-size: 24px!important;
+  }
+}

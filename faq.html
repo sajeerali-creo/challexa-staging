@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challexa</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
+    <!-- main style -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- icon font -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+</head>
+
+<body>
+
+    <header class="d-flex justify-content-between align-items-center px-16">
+        <a href="/">
+            <img src="img/logo.svg" alt>
+        </a>
+        <nav class="d-none d-lg-block">
+            <ul class="d-flex gap-4">
+                <li><a href="/">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="about.html">About Challexa</a></li>
+                <li><a href="faq.html" class="active">FAQ</a></li>
+                <li><a href="sign-in.html">Sign In</a></li>
+                <li><a href="sign-up.html" class="text-brand">Sign Up</a></li>
+            </ul>
+        </nav>
+        <button class="open-btn d-lg-none" onclick="openMenu()"><i class="ti ti-menu-2"></i></button>
+    </header>
+
+    <!-- Overlay -->
+    <div id="overlay" onclick="closeMenu()"></div>
+    <!-- Offcanvas Sidebar -->
+    <div id="offcanvas">
+        <div class="d-flex justify-content-between pb-16">
+            <a href="#">
+                <img src="img/logo-icon.svg" alt>
+            </a>
+            <button class="close-btn" onclick="closeMenu()"><i class="ti ti-x text-white"></i></button>
+        </div>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/register.html">Register</a></li>
+            <li><a href="/about.html">About Challexa</a></li>
+            <li><a href="/faq.html">FAQ</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="sign-in.html">Sign In</a></li>
+            <li><a href="sign-up.html" class="text-brand">Sign Up</a></li>
+        </ul>
+
+        <ul>
+            <li class="pt-24"><a href="#" class="small">Terms & Conditions</a></li>
+            <li><a href="#" class="small">Privacy Policy</a></li>
+            <li><a href="#" class="small">Help</a></li>
+        </ul>
+    </div>
+
+    <section class="pt-48 pb-48">
+        <div class="container">
+            <div class="faq-container">
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>1. What is Challexa?</span>
+                        <div class="icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        Challexa is a competitive racket sports platform where players join tournaments, compete in
+                        ladder challenges, track rankings, and build their player profile. It is designed to make
+                        competitive play structured, fair, and exciting.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>2. What sports does Challexa support?</span>
+                        <div class="icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        Challexa currently focuses on:
+                        <ul>
+                            <li> • Padel</li>
+                            <li> • Tennis</li>
+                            <li> • Pickleball</li>
+                            <li> • (Future expansion: other racket sports)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>3. How do I join a Challexa tournament?</span>
+                        <div class="icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <ul>
+                            <li>1. Register through the official Challexa registration link.</li>
+                            <li>2. Complete payment (if applicable).</li>
+                            <li>3. Receive confirmation and tournament details.</li>
+                            <li>4. Check-in on event day (QR or desk check-in).</li>
+                        </ul>
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>4. What tournament formats does Challexa use?</span>
+                        <div class="icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        Depending on the event:
+                        <ul>
+                            <li>• Group Stage + Knockout</li>
+                            <li>• Round Robin</li>
+                            <li>• King of the Court (social format)</li>
+                            <li>• One-off competitive events</li>
+                        </ul>
+                        Each tournament page clearly states the format before registration.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>5. How does the Group Stage + Knockout format work?</span>
+                        <div class="icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <ul>
+                            <li>• Teams are divided into groups.</li>
+                            <li>• Each team plays round-robin matches within their group.</li>
+                            <li>• Top teams qualify for Knockout rounds.</li>
+                            <li>• Winners advance until a Champion is crowned.</li>
+                            Tie-breakers may include:</li>
+                            <li>• Match wins</li>
+                            <li>• Set difference</li>
+                            <li>• Head-to-head result</li>
+                            <li>• Point difference</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>6. What is the Challexa Challenge Ladder?</span>
+                        <div class="icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The Challenge Ladder allows players or teams to:</p>
+                        <ul>
+                            <li>• Challenge opponents above them</li>
+                            <li>• Move up the rankings</li>
+                            <li>• Earn tier progression</li>
+                            <li>• Compete continuously throughout the season</li>
+                        </ul>
+                        <p>It creates ongoing competition beyond one-off tournaments.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>7. How are rankings calculated?</span>
+                        <div class="icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Rankings are based on:</p>
+                        <ul>
+                            <li>• Match results</li>
+                            <li>• Strength of opponents</li>
+                            <li>• Consistency</li>
+                            <li>• Tournament performance</li>
+                        </ul>
+                        <p>Challexa uses a structured rating logic to reflect real playing level.◊</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>8. What are Challexa Tiers?</span>
+                        <div class="icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Players are categorized into performance tiers based on activity and level.
+                            Tiers represent progression and competitive identity within the platform.</p>
+                        <p>Each tier unlocks:</p>
+                        <ul>
+                            <li>• Eligibility rules</li>
+                            <li>• Special tournaments</li>
+                            <li>• Recognition status</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>9. Can beginners join Challexa?</span>
+                        <div class="icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Players are categorized into performance tiers based on activity and level.
+                            Tiers represent progression and competitive identity within the platform.</p>
+                        <p>Each tier unlocks:</p>
+
+                        <p>Yes. Challexa events may be:</p>
+                        <ul>
+                            <li>• Beginner</li>
+                            <li>• Intermediate</li>
+                            <li>• Advanced</li>
+                            <li>• Open level</li>
+                        </ul>
+                        <p>Always check the tournament category before registering.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>10. How do I submit match scores?</span>
+                        <div class="icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Scores can be submitted via:</p>
+                        <ul>
+                            <li>• QR code on-site</li>
+                            <li>• Official score submission form</li>
+                            <li>• Verified by organizer</li>
+                        </ul>
+                        <p> False score submission may result in penalties.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>11. What happens if a team withdraws?</span>
+                        <div class="icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Withdrawal policies depend on timing:</p>
+                        <ul>
+                            <li>
+                                • Before draw release → Replacement may be allowed.</li>
+                            <li>
+                                • After draw release → Entry fee may be non-refundable.</li>
+                            <li>• During tournament → Walkover rules apply.</li>
+                            <li>• Official score submission form</li>
+                            <li>• Verified by organizer</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>12. Are matches officiated?</span>
+                        <div class="icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most Challexa matches are self-officiated unless otherwise stated.
+                            Players are expected to maintain sportsmanship and fair play.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>13. What prizes does Challexa offer?</span>
+                        <div class="icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Depending on the event:</p>
+                        <ul>
+                            <li>• Cash prizes</li>
+                            <li>• Trophies & medals</li>
+                            <li>• Sponsor rewards</li>
+                            <li>• Ranking points</li>
+                            <li>• Tier progression benefits</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>14. How do I improve my ranking?</span>
+                        <div class="icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can:</p>
+                        <ul>
+                            <li>• Play consistently</li>
+                            <li>• Challenge higher-ranked opponents</li>
+                            <li>• Join official tournaments</li>
+                            <li>• Win against stronger competition</li>
+                        </ul>
+                        <p>Activity and performance both matter.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>15. Is Challexa seasonal or year-round?</span>
+                        <div class="icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Challexa offers:</p>
+                        <ul>
+                            <li>• One-off events</li>
+                            <li>• Seasonal ladders</li>
+                            <li> • Special edition tournaments</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>15. Is Challexa seasonal or year-round?</span>
+                        <div class="icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Challexa offers:</p>
+                        <ul>
+                            <li>• One-off events</li>
+                            <li>• Seasonal ladders</li>
+                            <li> • Special edition tournaments</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>16. Can I partner or sponsor Challexa?</span>
+                        <div class="icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. For partnerships, sponsorships, or collaborations, contact the Challexa team through
+                            official communication channels.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>17. What makes Challexa different?</span>
+                        <div class="icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <ul>
+                            <li>• Structured competitive ecosystem</li>
+                            <li>• Transparent ranking system</li>
+                            <li>• Tier-based identity progression</li>
+                            <li>• Community-focused competition</li>
+                            <li>• Digital-first tournament management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>

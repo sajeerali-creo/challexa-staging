@@ -1,0 +1,116 @@
+/* Overlay background */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 5;
+    /* make sure it's below the menu */
+    display: block;
+}
+
+/* Overlay active state */
+#overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Sidebar popup style */
+#offcanvas {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    background: var(--black);
+    color: white;
+    padding: 26px;
+    transform: translate(-50%, -50%) scale(0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 10;
+
+    li {
+        a {
+
+            font-size: 29px;
+        }
+
+        .small {
+            font-size: 12px;
+        }
+    }
+
+
+}
+
+/* Active popup state */
+#offcanvas.active {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Close button */
+.close-btn {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Menu list */
+#offcanvas ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 48px;
+}
+
+#offcanvas ul li {
+    margin: 15px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+
+}
+
+/* When menu is active, animate each li with a delay */
+#offcanvas.active ul li {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger delays for each li */
+#offcanvas.active ul li:nth-child(1) { transition-delay: 0.1s; }
+#offcanvas.active ul li:nth-child(2) { transition-delay: 0.2s; }
+#offcanvas.active ul li:nth-child(3) { transition-delay: 0.3s; }
+#offcanvas.active ul li:nth-child(4) { transition-delay: 0.4s; }
+#offcanvas.active ul li:nth-child(5) { transition-delay: 0.5s; }
+#offcanvas.active ul li:nth-child(6) { transition-delay: 0.6s; }
+#offcanvas.active ul li:nth-child(7) { transition-delay: 0.7s; }
+#offcanvas.active ul li:nth-child(8) { transition-delay: 0.8s; }
+
+#offcanvas ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Open button */
+.open-btn {
+    background-color: var(--black);
+    color: var(--white);
+    height: 38px;
+    width: 38px;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+}

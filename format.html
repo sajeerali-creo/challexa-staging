@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challexa</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
+    <!-- main style -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- icon font -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="d-flex justify-content-between align-items-center p-8 px-16 inner-head">
+        <a href="/">
+            <img src="img/logo-icon.svg" class="h-30" alt>
+        </a>
+        <button class="open-btn d-lg-none" onclick="openMenu()"><i class="ti ti-menu-2"></i></button>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" onclick="closeMenu()"></div>
+    <!-- Offcanvas Sidebar -->
+    <div id="offcanvas">
+        <div class="d-flex justify-content-between pb-16">
+            <a href="#">
+                <img src="img/logo-icon.svg" class="h-30" alt>
+            </a>
+            <button class="close-btn" onclick="closeMenu()"><i class="ti ti-x text-white"></i></button>
+        </div>
+
+        <div class="Sidebar">
+            <div class="black-box d-flex justify-content-center flex-column align-items-center mb-16">
+                <div class="logo-tournment">
+                    <img src="img/tournment-img.png" alt="">
+                </div>
+                <div class="mt-16 ">
+                    <h1 class="h2 text-gradient">NBD Tour</h1>
+                </div>
+                <div class="mt-8 d-flex gap-16">
+                    <div class="d-flex align-items-center gap-4">
+                        <i class="ti ti-stopwatch text-brand fs-12"></i>
+                        <span class="text-white opacity-50 fs-12">08:00PM</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-4">
+                        <i class="ti ti-calendar-due text-brand fs-12"></i>
+                        <span class="text-white opacity-50 fs-12">20/03/2025</span>
+                    </div>
+                </div>
+            </div>
+            <a href="tournment-detail.html" class="menu-list active">
+                <i class="ti ti-eye"></i>overview
+            </a>
+            <div>
+                <img src="img/line.svg" alt="">
+            </div>
+            <a href="tournment-player.html" class="menu-list">
+                <i class="ti ti-user"></i>Players
+            </a>
+            <div>
+                <img src="img/line.svg" alt="">
+            </div>
+            <a href="tournment-matches-a.html" class="menu-list">
+                <i class="ti ti-layout-grid"></i>Matches
+            </a>
+            <div>
+                <img src="img/line.svg" alt="">
+            </div>
+            <a href="tournment-check-in.html" class="menu-list">
+                <i class="ti ti-users"></i>check-in
+            </a>
+            <div>
+                <img src="img/line.svg" alt="">
+            </div>
+            <a href="tournment-draw.html" class="menu-list">
+                <i class="ti ti-git-branch"></i>Draw
+            </a>
+        </div>
+    </div>
+
+    <section class="d-flex">
+        <div class="Sidebar d-none d-lg-block">
+            <div class="black-box d-flex justify-content-center flex-column align-items-center mb-48">
+                <div class="logo-tournment">
+                    <img src="img/tournment-img.png" alt="">
+                </div>
+                <div class="mt-16 ">
+                    <h1 class="h2 text-gradient">NBD Tour</h1>
+                </div>
+                <div class="mt-8 d-flex gap-4">
+                    <div class="d-flex align-items-center gap-4">
+                        <i class="ti ti-stopwatch text-brand"></i>
+                        <span class="text-white opacity-50 fs-12">08:00PM</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-4">
+                        <i class="ti ti-calendar-due text-brand"></i>
+                        <span class="text-white opacity-50 fs-12">20/03/2025</span>
+                    </div>
+                </div>
+            </div>
+            <a href="tournment-detail.html" class="menu-list active">
+                <i class="ti ti-eye"></i>overview
+            </a>
+            <div>
+                <img src="img/line.svg" alt="">
+            </div>
+            <a href="tournment-detail.html" class="menu-list">
+                <i class="ti ti-user"></i>Players
+            </a>
+            <div>
+                <img src="img/line.svg" alt="">
+            </div>
+            <a href="tournment-detail.html" class="menu-list">
+                <i class="ti ti-layout-grid"></i>Matches
+            </a>
+            <div>
+                <img src="img/line.svg" alt="">
+            </div>
+            <a href="tournment-detail.html" class="menu-list">
+                <i class="ti ti-users"></i>check-in
+            </a>
+            <div>
+                <img src="img/line.svg" alt="">
+            </div>
+            <a href="tournment-detail.html" class="menu-list">
+                <i class="ti ti-git-branch"></i>Draw
+            </a>
+        </div>
+
+        <div class="body-section w-100">
+            <div class="menu-top">
+                <a href="tournment-detail.html">OVERVIEW</a>
+                <a href="format.html" class="active">FORMAT</a>
+                <a href="rules.html">RULES</a>
+                <a href="prize.html">PRIZE</a>
+            </div>
+            <div class="p-24 p-lg-48 text-white">
+                <h3 class="h2 text-gradient mb-48">FORMAT</h3>
+                <div class="d-flex align-items-center justify-content-between">
+                    <span class="fs-14">GROUP + kNOCKOUT</span>
+                </div>
+                <div class="pt-24 pb-24">
+                    <img src="img/line.svg" class="w-100" alt="">
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <span class="opacity-50 fs-14"># Of Group</span>
+                    <span class="fs-14">6</span>
+                </div>
+                <div class="pt-24 pb-24">
+                    <img src="img/line.svg" class="w-100" alt="">
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <span class="opacity-50 fs-14"># Of Team</span>
+                    <span class="fs-14">24</span>
+                </div>
+                <div class="pt-24 pb-24">
+                    <img src="img/line.svg" class="w-100" alt="">
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <span class="opacity-50 fs-14"># Of Matches/Team</span>
+                    <span class="fs-14">3</span>
+                </div>
+                <div class="pt-24 pb-24">
+                    <img src="img/line.svg" class="w-100" alt="">
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <span class="opacity-50 fs-14"># Of Qualified Teams (TOP 2 + BEST 4 3RD PLACE/GROUP)</span>
+                    <span class="fs-14">16</span>
+                </div>
+                
+                <div class="pt-24 pb-24">
+                    <img src="img/line.svg" class="w-100" alt="">
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <span class="fs-14">GROUP + kNOCKOUT</span>
+                </div>
+                <div class="pt-24 pb-24">
+                    <img src="img/line.svg" class="w-100" alt="">
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                        <span class="opacity-50 fs-14">Group Stage - Quarter Final</span><br>
+                        <span class="opacity-50 fs-14">1 Set</span>
+                    </div>
+                    <div class="text-right">
+                        <span class="fs-14">6 Games</span><br>
+                        <span class="fs-14">6-6 Tiebreak To 7</span>
+                    </div>
+                </div>
+                <div class="pt-24 pb-24">
+                    <img src="img/line.svg" class="w-100" alt="">
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                        <span class="opacity-50 fs-14">Semi Final</span><br>
+                        <span class="opacity-50 fs-14">1 Set</span>
+                    </div>
+                    <div class="text-right">
+                        <span class="fs-14">9 Games</span><br>
+                        <span class="fs-14">9-9 Tiebreak To 10</span>
+                    </div>
+                </div>
+                <div class="pt-24 pb-24">
+                    <img src="img/line.svg" class="w-100" alt="">
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                        <span class="opacity-50 fs-14">Finals</span><br>
+                        <span class="opacity-50 fs-14">3 Sets</span>
+                    </div>
+                    <div class="text-right">
+                        <span class="fs-14">6 Games</span><br>
+                        <span class="fs-14">6-6 Tiebreak To 7</span>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- script -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>
