@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challexa</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
+    <!-- main style -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- icon font -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="d-flex justify-content-between align-items-center p-8 px-16 inner-head">
+        <a href="/">
+            <img src="img/logo-icon.svg" class="h-30" alt>
+        </a>
+        <button class="open-btn d-lg-none" onclick="openMenu()"><i class="ti ti-menu-2"></i></button>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" onclick="closeMenu()"></div>
+    <!-- Offcanvas Sidebar -->
+    <div id="offcanvas">
+        <div class="d-flex justify-content-between pb-16">
+            <a href="#">
+                <img src="img/logo-icon.svg" class="h-30" alt>
+            </a>
+            <button class="close-btn" onclick="closeMenu()"><i class="ti ti-x text-white"></i></button>
+        </div>
+
+        <div class="Sidebar">
+            <div class="black-box d-flex justify-content-center flex-column align-items-center mb-16">
+                <div class="logo-tournment">
+                    <img src="img/tournment-img.png" alt="">
+                </div>
+                <div class="mt-16 ">
+                    <h1 class="h2 text-gradient">NBD Tour</h1>
+                </div>
+                <div class="mt-8 d-flex gap-16">
+                    <div class="d-flex align-items-center gap-4">
+                        <i class="ti ti-stopwatch text-brand fs-12"></i>
+                        <span class="text-white opacity-50 fs-12">08:00PM</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-4">
+                        <i class="ti ti-calendar-due text-brand fs-12"></i>
+                        <span class="text-white opacity-50 fs-12">20/03/2025</span>
+                    </div>
+                </div>
+            </div>
+            <a href="tournment-detail.html" class="menu-list">
+                <i class="ti ti-eye"></i>overview
+            </a>
+            <div>
+                <img src="img/line.svg" alt="">
+            </div>
+            <a href="tournment-player.html" class="menu-list">
+                <i class="ti ti-user"></i>Players
+            </a>
+
+            <div>
+                <img src="img/line.svg" alt="">
+            </div>
+            <a href="tournment-check-in.html" class="menu-list active">
+                <i class="ti ti-users"></i>check-in
+            </a>
+            <div>
+                <img src="img/line.svg" alt="">
+            </div>
+            <a href="tournment-matches-a.html" class="menu-list">
+                <i class="ti ti-layout-grid"></i>Matches
+            </a>
+            <div>
+                <img src="img/line.svg" alt="">
+            </div>
+            <a href="tournment-draw.html" class="menu-list">
+                <i class="ti ti-git-branch"></i>Draw
+            </a>
+        </div>
+    </div>
+
+    <section class="d-flex">
+        <div class="Sidebar d-none d-lg-block">
+            <div class="black-box d-flex justify-content-center flex-column align-items-center mb-48">
+                <div class="logo-tournment">
+                    <img src="img/tournment-img.png" alt="">
+                </div>
+                <div class="mt-16 ">
+                    <h1 class="h2 text-gradient">NBD Tour</h1>
+                </div>
+                <div class="mt-8 d-flex gap-4">
+                    <div class="d-flex align-items-center gap-4">
+                        <i class="ti ti-stopwatch text-brand"></i>
+                        <span class="text-white opacity-50 fs-12">08:00PM</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-4">
+                        <i class="ti ti-calendar-due text-brand"></i>
+                        <span class="text-white opacity-50 fs-12">20/03/2025</span>
+                    </div>
+                </div>
+            </div>
+            <a href="tournment-detail.html" class="menu-list">
+                <i class="ti ti-eye"></i>overview
+            </a>
+            <div>
+                <img src="img/line.svg" alt="">
+            </div>
+            <a href="tournment-player.html" class="menu-list">
+                <i class="ti ti-user"></i>Players
+            </a>
+
+            <div>
+                <img src="img/line.svg" alt="">
+            </div>
+            <a href="tournment-check-in.html" class="menu-list active">
+                <i class="ti ti-users"></i>check-in
+            </a>
+            <div>
+                <img src="img/line.svg" alt="">
+            </div>
+            <a href="tournment-matches-a.html" class="menu-list">
+                <i class="ti ti-layout-grid"></i>Matches
+            </a>
+            <div>
+                <img src="img/line.svg" alt="">
+            </div>
+            <a href="tournment-draw.html" class="menu-list">
+                <i class="ti ti-git-branch"></i>Draw
+            </a>
+        </div>
+
+        <div class="body-section w-100 no-padding-top">
+
+            <div class="p-24 p-lg-48 text-white">
+                <div class="d-lg-flex justify-content-between align-items-center mb-16">
+                    <div>
+                        <h3 class="text-gradient h1">Player Check-In</h3>
+                        <p class="text-white opacity-50 fs-12">Confirm your arrival to activate your matches.</p>
+                    </div>
+                    <div class="big-number font-orbit">
+                        <span class="text-brand">12</span>/24
+                    </div>
+                </div>
+                <div class="box-progress p-24">
+                    <div class="d-flex justify-content-between align-items-center mb-16">
+                        <span>Check-In progress</span>
+                        <span>35%</span>
+                    </div>
+                    <div>
+                        <div class="progress w-100">
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 pt-16 pb-16">
+                    <img src="img/line.svg" alt="">
+                </div>
+                <div class="w-100 d-flex gap-8">
+                    <div class="search-card d-flex flex-column w-100">
+                        <div class="search-icon"><i class="ti ti-search"></i></div>
+                        <input type="text" class="input-text w-100" placeholder="Search">
+                    </div>
+                    <button class="btn btn-primary d-flex gap-8"><i class="ti ti-search"></i>Search Team</button>
+                </div>
+                <div class="row mt-16">
+                    <div class="col-lg-6 mb-16">
+                        <div class="user-status-panel">
+                            <div class="status-row" id="user-1">
+                                <div class="indicator-circle empty"></div>
+                                <div class="profile-group">
+                                    <img src="https://i.pravatar.cc/150?u=arnel" alt="Avatar" class="user-avatar">
+                                    <span class="user-label">Arnel Berdan</span>
+                                </div>
+                                <button class="action-btn btn-dark" onclick="toggleStatus('user-1')">Check-In</button>
+                            </div>
+
+                            <div class="section-break">
+                                <span>T3</span>
+                            </div>
+
+                            <div class="status-row" id="user-2">
+                                <div class="indicator-circle empty"></div>
+                                <div class="profile-group">
+                                    <img src="img/head-lady.avif" alt="Avatar" class="user-avatar">
+                                    <span class="user-label">Jane Doe</span>
+                                </div>
+                                <button class="action-btn btn-dark" onclick="toggleStatus('user-2')">Check-In</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-16">
+                        <div class="user-status-panel">
+                            <div class="status-row" id="user-1">
+                                <div class="indicator-circle empty"></div>
+                                <div class="profile-group">
+                                    <img src="https://i.pravatar.cc/150?u=arnel" alt="Avatar" class="user-avatar">
+                                    <span class="user-label">Arnel Berdan</span>
+                                </div>
+                                <button class="action-btn btn-dark" onclick="toggleStatus('user-1')">Check-In</button>
+                            </div>
+
+                            <div class="section-break">
+                                <span>T3</span>
+                            </div>
+
+                            <div class="status-row" id="user-2">
+                                <div class="indicator-circle empty"></div>
+                                <div class="profile-group">
+                                    <img src="img/head-lady.avif" alt="Avatar" class="user-avatar">
+                                    <span class="user-label">Jane Doe</span>
+                                </div>
+                                <button class="action-btn btn-dark" onclick="toggleStatus('user-2')">Check-In</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-16">
+                        <div class="user-status-panel">
+                            <div class="status-row" id="user-1">
+                                <div class="indicator-circle empty"></div>
+                                <div class="profile-group">
+                                    <img src="https://i.pravatar.cc/150?u=arnel" alt="Avatar" class="user-avatar">
+                                    <span class="user-label">Arnel Berdan</span>
+                                </div>
+                                <button class="action-btn btn-dark" onclick="toggleStatus('user-1')">Check-In</button>
+                            </div>
+
+                            <div class="section-break">
+                                <span>T3</span>
+                            </div>
+
+                            <div class="status-row" id="user-2">
+                                <div class="indicator-circle empty"></div>
+                                <div class="profile-group">
+                                    <img src="img/head-lady.avif" alt="Avatar" class="user-avatar">
+                                    <span class="user-label">Jane Doe</span>
+                                </div>
+                                <button class="action-btn btn-dark" onclick="toggleStatus('user-2')">Check-In</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-16">
+                        <div class="user-status-panel">
+                            <div class="status-row" id="user-1">
+                                <div class="indicator-circle empty"></div>
+                                <div class="profile-group">
+                                    <img src="https://i.pravatar.cc/150?u=arnel" alt="Avatar" class="user-avatar">
+                                    <span class="user-label">Arnel Berdan</span>
+                                </div>
+                                <button class="action-btn btn-dark" onclick="toggleStatus('user-1')">Check-In</button>
+                            </div>
+
+                            <div class="section-break">
+                                <span>T3</span>
+                            </div>
+
+                            <div class="status-row" id="user-2">
+                                <div class="indicator-circle empty"></div>
+                                <div class="profile-group">
+                                    <img src="img/head-lady.avif" alt="Avatar" class="user-avatar">
+                                    <span class="user-label">Jane Doe</span>
+                                </div>
+                                <button class="action-btn btn-dark" onclick="toggleStatus('user-2')">Check-In</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-16">
+                        <div class="user-status-panel">
+                            <div class="status-row" id="user-1">
+                                <div class="indicator-circle empty"></div>
+                                <div class="profile-group">
+                                    <img src="https://i.pravatar.cc/150?u=arnel" alt="Avatar" class="user-avatar">
+                                    <span class="user-label">Arnel Berdan</span>
+                                </div>
+                                <button class="action-btn btn-dark" onclick="toggleStatus('user-1')">Check-In</button>
+                            </div>
+
+                            <div class="section-break">
+                                <span>T3</span>
+                            </div>
+
+                            <div class="status-row" id="user-2">
+                                <div class="indicator-circle empty"></div>
+                                <div class="profile-group">
+                                    <img src="img/head-lady.avif" alt="Avatar" class="user-avatar">
+                                    <span class="user-label">Jane Doe</span>
+                                </div>
+                                <button class="action-btn btn-dark" onclick="toggleStatus('user-2')">Check-In</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-16">
+                        <div class="user-status-panel">
+                            <div class="status-row" id="user-1">
+                                <div class="indicator-circle empty"></div>
+                                <div class="profile-group">
+                                    <img src="https://i.pravatar.cc/150?u=arnel" alt="Avatar" class="user-avatar">
+                                    <span class="user-label">Arnel Berdan</span>
+                                </div>
+                                <button class="action-btn btn-dark" onclick="toggleStatus('user-1')">Check-In</button>
+                            </div>
+
+                            <div class="section-break">
+                                <span>T3</span>
+                            </div>
+
+                            <div class="status-row" id="user-2">
+                                <div class="indicator-circle empty"></div>
+                                <div class="profile-group">
+                                    <img src="img/head-lady.avif" alt="Avatar" class="user-avatar">
+                                    <span class="user-label">Jane Doe</span>
+                                </div>
+                                <button class="action-btn btn-dark" onclick="toggleStatus('user-2')">Check-In</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-16">
+                        <div class="user-status-panel">
+                            <div class="status-row" id="user-1">
+                                <div class="indicator-circle empty"></div>
+                                <div class="profile-group">
+                                    <img src="https://i.pravatar.cc/150?u=arnel" alt="Avatar" class="user-avatar">
+                                    <span class="user-label">Arnel Berdan</span>
+                                </div>
+                                <button class="action-btn btn-dark" onclick="toggleStatus('user-1')">Check-In</button>
+                            </div>
+
+                            <div class="section-break">
+                                <span>T3</span>
+                            </div>
+
+                            <div class="status-row" id="user-2">
+                                <div class="indicator-circle empty"></div>
+                                <div class="profile-group">
+                                    <img src="img/head-lady.avif" alt="Avatar" class="user-avatar">
+                                    <span class="user-label">Jane Doe</span>
+                                </div>
+                                <button class="action-btn btn-dark" onclick="toggleStatus('user-2')">Check-In</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-16">
+                        <div class="user-status-panel">
+                            <div class="status-row" id="user-1">
+                                <div class="indicator-circle empty"></div>
+                                <div class="profile-group">
+                                    <img src="https://i.pravatar.cc/150?u=arnel" alt="Avatar" class="user-avatar">
+                                    <span class="user-label">Arnel Berdan</span>
+                                </div>
+                                <button class="action-btn btn-dark" onclick="toggleStatus('user-1')">Check-In</button>
+                            </div>
+
+                            <div class="section-break">
+                                <span>T3</span>
+                            </div>
+
+                            <div class="status-row" id="user-2">
+                                <div class="indicator-circle empty"></div>
+                                <div class="profile-group">
+                                    <img src="img/head-lady.avif" alt="Avatar" class="user-avatar">
+                                    <span class="user-label">Jane Doe</span>
+                                </div>
+                                <button class="action-btn btn-dark" onclick="toggleStatus('user-2')">Check-In</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-16">
+                        <div class="user-status-panel">
+                            <div class="status-row" id="user-1">
+                                <div class="indicator-circle empty"></div>
+                                <div class="profile-group">
+                                    <img src="https://i.pravatar.cc/150?u=arnel" alt="Avatar" class="user-avatar">
+                                    <span class="user-label">Arnel Berdan</span>
+                                </div>
+                                <button class="action-btn btn-dark" onclick="toggleStatus('user-1')">Check-In</button>
+                            </div>
+
+                            <div class="section-break">
+                                <span>T3</span>
+                            </div>
+
+                            <div class="status-row" id="user-2">
+                                <div class="indicator-circle empty"></div>
+                                <div class="profile-group">
+                                    <img src="img/head-lady.avif" alt="Avatar" class="user-avatar">
+                                    <span class="user-label">Jane Doe</span>
+                                </div>
+                                <button class="action-btn btn-dark" onclick="toggleStatus('user-2')">Check-In</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-16">
+                        <div class="user-status-panel">
+                            <div class="status-row" id="user-1">
+                                <div class="indicator-circle empty"></div>
+                                <div class="profile-group">
+                                    <img src="https://i.pravatar.cc/150?u=arnel" alt="Avatar" class="user-avatar">
+                                    <span class="user-label">Arnel Berdan</span>
+                                </div>
+                                <button class="action-btn btn-dark" onclick="toggleStatus('user-1')">Check-In</button>
+                            </div>
+
+                            <div class="section-break">
+                                <span>T3</span>
+                            </div>
+
+                            <div class="status-row" id="user-2">
+                                <div class="indicator-circle empty"></div>
+                                <div class="profile-group">
+                                    <img src="img/head-lady.avif" alt="Avatar" class="user-avatar">
+                                    <span class="user-label">Jane Doe</span>
+                                </div>
+                                <button class="action-btn btn-dark" onclick="toggleStatus('user-2')">Check-In</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>

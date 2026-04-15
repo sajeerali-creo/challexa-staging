@@ -85,3 +85,36 @@ $(document).ready(function() {
         $(this).addClass('active');
     });
 });
+
+
+// check in card
+function toggleStatus(rowId) {
+  const row = document.getElementById(rowId);
+  const button = row.querySelector('.action-btn');
+  const indicator = row.querySelector('.indicator-circle');
+
+  if (button.innerText === "Check-In") {
+    // Switch to Ready State
+    button.innerText = "I'm Ready";
+    button.classList.remove('btn-dark');
+    button.classList.add('btn-neon');
+
+    indicator.classList.remove('empty');
+    indicator.classList.add('checked');
+    // Injecting the specific Tabler Icon from your screenshot
+    indicator.innerHTML = '<i class="ti ti-check"></i>';
+  } else {
+    // Switch back to Default State
+    button.innerText = "Check-In";
+    button.classList.remove('btn-neon');
+    button.classList.add('btn-dark');
+
+    indicator.classList.remove('checked');
+    indicator.classList.add('empty');
+    indicator.innerHTML = '';
+  }
+}
+
+// loading draw animation
+// Simulate data fetching
+// Toggle off the loading state

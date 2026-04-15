@@ -94,6 +94,7 @@
   position: fixed;
   top: 54px;
   overflow-x: scroll;
+  z-index: 9;
 
   .active {
     color: var(--primary);
@@ -123,6 +124,7 @@
   width: 100%;
   background-color: #000;
   display: block;
+  z-index: 9;
 
   @media (min-width: 992px) {
     display: none !important;
