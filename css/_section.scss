@@ -7,8 +7,6 @@
   width: 100%;
 }
 
-
-
 .faq-item {
   background: #111214;
   border-radius: 16px;
@@ -78,7 +76,11 @@
   justify-content: center;
   align-items: center;
   padding: 8px;
-  background: linear-gradient(287deg, rgba(153, 230, 0, 0) 0%, rgba(230, 187, 0, 0.27) 100%);
+  background: linear-gradient(
+    287deg,
+    rgba(153, 230, 0, 0) 0%,
+    rgba(230, 187, 0, 0.27) 100%
+  );
   align-content: center;
   gap: 8px;
   border-radius: 8px;
@@ -101,7 +103,11 @@
   justify-content: center;
   align-items: center;
   padding: 8px;
-  background: linear-gradient(289deg, rgba(153, 230, 0, 0) 0%, rgba(133, 133, 133, 0.27) 100%);
+  background: linear-gradient(
+    289deg,
+    rgba(153, 230, 0, 0) 0%,
+    rgba(133, 133, 133, 0.27) 100%
+  );
   overflow: var(--overflow-clip-fallback, clip);
   align-content: center;
   flex-wrap: nowrap;
@@ -125,7 +131,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px 8px 5px 8px;
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(171, 171, 171, 0.1) 100%);
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(171, 171, 171, 0.1) 100%
+  );
   overflow: visible;
   align-content: center;
   flex-wrap: nowrap;
@@ -180,7 +190,11 @@
   justify-content: center;
   align-items: center;
   padding: 24px;
-  background: linear-gradient(179deg, rgba(153, 230, 0, 0) 0%, rgba(133, 133, 133, 0.27) 100%);
+  background: linear-gradient(
+    179deg,
+    rgba(153, 230, 0, 0) 0%,
+    rgba(133, 133, 133, 0.27) 100%
+  );
   overflow: var(--overflow-clip-fallback, clip);
   border-radius: 20px;
 
@@ -191,7 +205,11 @@
     justify-content: center;
     align-items: center;
     padding: 24px;
-    background: linear-gradient(90deg, rgba(153, 230, 0, 0) 0%, rgba(196, 196, 196, 0.27) 100%);
+    background: linear-gradient(
+      90deg,
+      rgba(153, 230, 0, 0) 0%,
+      rgba(196, 196, 196, 0.27) 100%
+    );
     overflow: var(--overflow-clip-fallback, clip);
     gap: 10px;
     border-radius: 210px;
@@ -207,7 +225,11 @@
   justify-content: center;
   align-items: center;
   padding: 24px;
-  background: linear-gradient(179deg, rgba(153, 230, 0, 0) 0%, rgba(230, 187, 0, 0.27) 100%);
+  background: linear-gradient(
+    179deg,
+    rgba(153, 230, 0, 0) 0%,
+    rgba(230, 187, 0, 0.27) 100%
+  );
   overflow: var(--overflow-clip-fallback, clip);
   border-radius: 20px;
 
@@ -218,7 +240,11 @@
     justify-content: center;
     align-items: center;
     padding: 24px;
-    background: linear-gradient(90deg, rgba(153, 230, 0, 0) 0%, rgba(196, 196, 196, 0.27) 100%);
+    background: linear-gradient(
+      90deg,
+      rgba(153, 230, 0, 0) 0%,
+      rgba(196, 196, 196, 0.27) 100%
+    );
     overflow: var(--overflow-clip-fallback, clip);
     gap: 10px;
     border-radius: 210px;
@@ -234,7 +260,11 @@
   justify-content: center;
   align-items: center;
   padding: 24px;
-  background: linear-gradient(181deg, rgba(153, 230, 0, 0) 0%, rgba(130, 66, 3, 0.27) 100%);
+  background: linear-gradient(
+    181deg,
+    rgba(153, 230, 0, 0) 0%,
+    rgba(130, 66, 3, 0.27) 100%
+  );
   overflow: var(--overflow-clip-fallback, clip);
   border-radius: 20px;
 
@@ -245,7 +275,11 @@
     justify-content: center;
     align-items: center;
     padding: 24px;
-    background: linear-gradient(90deg, rgba(153, 230, 0, 0) 0%, rgba(196, 196, 196, 0.27) 100%);
+    background: linear-gradient(
+      90deg,
+      rgba(153, 230, 0, 0) 0%,
+      rgba(196, 196, 196, 0.27) 100%
+    );
     overflow: var(--overflow-clip-fallback, clip);
     gap: 10px;
     border-radius: 210px;
@@ -296,21 +330,20 @@
   }
 
   .c-active {
-    background: linear-gradient(180deg, #fefefe 0%, #E65800 100%);
+    background: linear-gradient(180deg, #fefefe 0%, #e65800 100%);
   }
 
   .d-active {
-    background: linear-gradient(180deg, #fefefe 0%, #C46D6F 100%);
+    background: linear-gradient(180deg, #fefefe 0%, #c46d6f 100%);
   }
 
   .e-active {
-    background: linear-gradient(180deg, #fefefe 0%, #00E6CF 100%);
+    background: linear-gradient(180deg, #fefefe 0%, #00e6cf 100%);
   }
 
   .f-active {
-    background: linear-gradient(180deg, #fefefe 0%, #E6C000 100%);
+    background: linear-gradient(180deg, #fefefe 0%, #e6c000 100%);
   }
-
 }
 
 .bg-h {
@@ -322,7 +355,7 @@
 }
 
 .bg-h2 {
-  background-color: #0D0D0D;
+  background-color: #0d0d0d;
   padding: 12px 4px;
   text-align: center;
   font-size: 12px;
@@ -338,7 +371,7 @@
 }
 
 .strip {
-  background-color: #565B5C !important;
+  background-color: #565b5c !important;
   padding: 12px 4px;
   font-size: 12px;
   text-align: center;
@@ -354,7 +387,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .over-head {
@@ -399,7 +431,7 @@
   border-radius: 8px;
 }
 
-.box-progress{
+.box-progress {
   background-color: rgba(255, 255, 255, 0.06);
   border-radius: 16px;
 }
@@ -416,7 +448,7 @@
 .progress-bar {
   height: 100%;
   width: 0%;
-  background: linear-gradient(90deg, #c6e190, #9AE600);
+  background: linear-gradient(90deg, #c6e190, #9ae600);
   border-radius: 50px;
   animation: loadProgress 3s ease-in-out forwards;
 }

@@ -1,105 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Offcanvas Menu</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offcanvas Menu</title>
 
-<style>
-    body {
-    font-family: Arial, sans-serif;
-}
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
 
-/* Open button */
-.open-btn {
-    font-size: 20px;
-    padding: 10px 20px;
-    cursor: pointer;
-}
+      /* Open button */
+      .open-btn {
+        font-size: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
 
-/* Overlay background */
-#overlay {
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.4);
-    top: 0;
-    left: 0;
-    z-index: 5;
-}
+      /* Overlay background */
+      #overlay {
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        top: 0;
+        left: 0;
+        z-index: 5;
+      }
 
-/* Sidebar */
-#offcanvas {
-    position: fixed;
-    top: 0;
-    left: -300px;
-    width: 300px;
-    height: 100%;
-    background: #141413;
-    color: white;
-    padding: 20px;
-    transition: 0.4s ease;
-    z-index: 10;
-}
+      /* Sidebar */
+      #offcanvas {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 300px;
+        height: 100%;
+        background: #141413;
+        color: white;
+        padding: 20px;
+        transition: 0.4s ease;
+        z-index: 10;
+      }
 
-/* Close button */
-.close-btn {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 22px;
-    cursor: pointer;
-}
+      /* Close button */
+      .close-btn {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+      }
 
-/* Menu */
-#offcanvas ul {
-    list-style: none;
-    padding: 0;
-}
+      /* Menu */
+      #offcanvas ul {
+        list-style: none;
+        padding: 0;
+      }
 
-#offcanvas ul li {
-    margin: 20px 0;
-}
+      #offcanvas ul li {
+        margin: 20px 0;
+      }
 
-#offcanvas ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-</style>
-</head>
-<body>
+      #offcanvas ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Button -->
+    <button class="open-btn" onclick="openMenu()">☰ Open Menu</button>
 
-<!-- Button -->
-<button class="open-btn" onclick="openMenu()">☰ Open Menu</button>
+    <!-- Overlay -->
+    <div id="overlay" onclick="closeMenu()"></div>
 
-<!-- Overlay -->
-<div id="overlay" onclick="closeMenu()"></div>
-
-<!-- Offcanvas Sidebar -->
-<div id="offcanvas">
-    <button class="close-btn" onclick="closeMenu()">✖</button>
-    <h2>Menu</h2>
-    <ul>
+    <!-- Offcanvas Sidebar -->
+    <div id="offcanvas">
+      <button class="close-btn" onclick="closeMenu()">✖</button>
+      <h2>Menu</h2>
+      <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Portfolio</a></li>
         <li><a href="#">Contact</a></li>
-    </ul>
-</div>
+      </ul>
+    </div>
 
-<script>
-function openMenu() {
-    document.getElementById("offcanvas").style.left = "0";
-    document.getElementById("overlay").style.display = "block";
-}
+    <script>
+      function openMenu() {
+        document.getElementById("offcanvas").style.left = "0";
+        document.getElementById("overlay").style.display = "block";
+      }
 
-function closeMenu() {
-    document.getElementById("offcanvas").style.left = "-300px";
-    document.getElementById("overlay").style.display = "none";
-}
-</script>
-
-</body>
+      function closeMenu() {
+        document.getElementById("offcanvas").style.left = "-300px";
+        document.getElementById("overlay").style.display = "none";
+      }
+    </script>
+  </body>
 </html>

@@ -302,7 +302,7 @@ header .active {
 }
 .search-box input {
   padding-left: 40px;
-  background-color: #1C1C1C;
+  background-color: #1c1c1c;
   border: 1px solid #272727;
 }
 
@@ -324,7 +324,7 @@ header .active {
 }
 .search-card input {
   padding-left: 40px;
-  background-color: #1C1C1C;
+  background-color: #1c1c1c;
   border: 1px solid #272727;
   height: 38px;
 }
@@ -410,28 +410,28 @@ header .active {
   background: linear-gradient(180deg, #fefefe 0%, #757aff 100%);
 }
 .box-group .c:hover {
-  background: linear-gradient(180deg, #fefefe 0%, #E65800 100%);
+  background: linear-gradient(180deg, #fefefe 0%, #e65800 100%);
 }
 .box-group .c-active {
-  background: linear-gradient(180deg, #fefefe 0%, #E65800 100%);
+  background: linear-gradient(180deg, #fefefe 0%, #e65800 100%);
 }
 .box-group .d:hover {
-  background: linear-gradient(180deg, #fefefe 0%, #C46D6F 100%);
+  background: linear-gradient(180deg, #fefefe 0%, #c46d6f 100%);
 }
 .box-group .d-active {
-  background: linear-gradient(180deg, #fefefe 0%, #C46D6F 100%);
+  background: linear-gradient(180deg, #fefefe 0%, #c46d6f 100%);
 }
 .box-group .e:hover {
-  background: linear-gradient(180deg, #fefefe 0%, #00E6CF 100%);
+  background: linear-gradient(180deg, #fefefe 0%, #00e6cf 100%);
 }
 .box-group .e-active {
-  background: linear-gradient(180deg, #fefefe 0%, #00E6CF 100%);
+  background: linear-gradient(180deg, #fefefe 0%, #00e6cf 100%);
 }
 .box-group .f:hover {
-  background: linear-gradient(180deg, #fefefe 0%, #E6C000 100%);
+  background: linear-gradient(180deg, #fefefe 0%, #e6c000 100%);
 }
 .box-group .f-active {
-  background: linear-gradient(180deg, #fefefe 0%, #E6C000 100%);
+  background: linear-gradient(180deg, #fefefe 0%, #e6c000 100%);
 }
 
 .mobile-scroll {
@@ -552,12 +552,24 @@ header .active {
   height: 1px;
 }
 
+.top-1 {
+  background: linear-gradient(180deg, #fefefe 0%, #f7ba02 100%) !important;
+}
+
+.top-2 {
+  background: linear-gradient(180deg, #fefefe 0%, #272322 100%) !important;
+}
+
+.top-3 {
+  background: linear-gradient(180deg, #fefefe 0%, #e62300 100%) !important;
+}
+
 :root {
   /* Neutrals */
   --white: #ffffff;
   --black: #000000;
   /* Brand Colors */
-  --primary: #9AE600;
+  --primary: #9ae600;
   --primary-500: #77b004; /* Base Brand */
   --primary-600: #547d02;
   /* System Colors */
@@ -580,7 +592,7 @@ body {
   letter-spacing: 0.1em;
   font-family: "Orbitron", sans-serif;
   font-weight: 500;
-  background: linear-gradient(90deg, #9AE600 0%, #FFFFFF 100%);
+  background: linear-gradient(90deg, #9ae600 0%, #ffffff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -591,7 +603,7 @@ body {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  background: linear-gradient(90deg, #9AE600, #ffffff, #9AE600);
+  background: linear-gradient(90deg, #9ae600, #ffffff, #9ae600);
   background-size: 200% 100%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -661,7 +673,7 @@ body {
   display: block;
   padding: 8px 16px;
   border-radius: 4px;
-  background: linear-gradient(90deg, #2B41BD 0%, rgba(43, 65, 189, 0) 100%);
+  background: linear-gradient(90deg, #2b41bd 0%, rgba(43, 65, 189, 0) 100%);
   letter-spacing: 2px;
 }
 
@@ -853,6 +865,10 @@ p {
 .big-number {
   font-size: 60px;
   color: #60615e;
+}
+
+.text-danger {
+  color: #ea6c73;
 }
 
 .container {
@@ -1141,16 +1157,16 @@ p {
   background: linear-gradient(180deg, #fefefe 0%, #757aff 100%);
 }
 .w-fixed2 .c-active {
-  background: linear-gradient(180deg, #fefefe 0%, #E65800 100%);
+  background: linear-gradient(180deg, #fefefe 0%, #e65800 100%);
 }
 .w-fixed2 .d-active {
-  background: linear-gradient(180deg, #fefefe 0%, #C46D6F 100%);
+  background: linear-gradient(180deg, #fefefe 0%, #c46d6f 100%);
 }
 .w-fixed2 .e-active {
-  background: linear-gradient(180deg, #fefefe 0%, #00E6CF 100%);
+  background: linear-gradient(180deg, #fefefe 0%, #00e6cf 100%);
 }
 .w-fixed2 .f-active {
-  background: linear-gradient(180deg, #fefefe 0%, #E6C000 100%);
+  background: linear-gradient(180deg, #fefefe 0%, #e6c000 100%);
 }
 
 .bg-h {
@@ -1162,7 +1178,7 @@ p {
 }
 
 .bg-h2 {
-  background-color: #0D0D0D;
+  background-color: #0d0d0d;
   padding: 12px 4px;
   text-align: center;
   font-size: 12px;
@@ -1178,7 +1194,7 @@ p {
 }
 
 .strip {
-  background-color: #565B5C !important;
+  background-color: #565b5c !important;
   padding: 12px 4px;
   font-size: 12px;
   text-align: center;
@@ -1255,7 +1271,7 @@ p {
 .progress-bar {
   height: 100%;
   width: 0%;
-  background: linear-gradient(90deg, #c6e190, #9AE600);
+  background: linear-gradient(90deg, #c6e190, #9ae600);
   border-radius: 50px;
   animation: loadProgress 3s ease-in-out forwards;
 }
@@ -3022,33 +3038,33 @@ input:focus {
    GUTTER UTILITIES
 ========================= */
 .g-0 {
-  --bs-gutter-x:0;
-  --bs-gutter-y:0;
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
 }
 
 .g-1 {
-  --bs-gutter-x:.25rem;
-  --bs-gutter-y:.25rem;
+  --bs-gutter-x: 0.25rem;
+  --bs-gutter-y: 0.25rem;
 }
 
 .g-2 {
-  --bs-gutter-x:.5rem;
-  --bs-gutter-y:.5rem;
+  --bs-gutter-x: 0.5rem;
+  --bs-gutter-y: 0.5rem;
 }
 
 .g-3 {
-  --bs-gutter-x:1rem;
-  --bs-gutter-y:1rem;
+  --bs-gutter-x: 1rem;
+  --bs-gutter-y: 1rem;
 }
 
 .g-4 {
-  --bs-gutter-x:1.5rem;
-  --bs-gutter-y:1.5rem;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 1.5rem;
 }
 
 .g-5 {
-  --bs-gutter-x:3rem;
-  --bs-gutter-y:3rem;
+  --bs-gutter-x: 3rem;
+  --bs-gutter-y: 3rem;
 }
 
 .glass-card {
@@ -3471,7 +3487,7 @@ input:focus {
 /* Title */
 .tmx-match-title {
   text-align: center;
-  color: #9AE600;
+  color: #9ae600;
   margin-bottom: 30px;
   letter-spacing: 2px;
 }
@@ -3561,7 +3577,7 @@ input:focus {
 
 .tmx-score-box {
   background: #111;
-  color: #9AE600;
+  color: #9ae600;
   padding: 16px;
   border-radius: 8px;
   width: 100%;
@@ -3579,21 +3595,21 @@ input:focus {
 .tmx-connector-line {
   width: 0;
   height: 2px;
-  background: #9AE600;
+  background: #9ae600;
   margin: auto;
-  box-shadow: 0 0 10px #9AE600, 0 0 20px #9AE600;
+  box-shadow: 0 0 10px #9ae600, 0 0 20px #9ae600;
   animation: tmxDrawLineAnim 1.5s ease forwards;
 }
 
 .tmx-connector-drop {
   width: 2px;
   height: 0;
-  background: #9AE600;
+  background: #9ae600;
   position: absolute;
   left: 50%;
   top: 0;
   transform: translateX(-50%);
-  box-shadow: 0 0 10px #9AE600;
+  box-shadow: 0 0 10px #9ae600;
   animation: tmxDropLineAnim 1s ease forwards;
   animation-delay: 1.5s;
 }

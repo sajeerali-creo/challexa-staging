@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challexa</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/favicon-96x96.png"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png" />
+    <!-- main style -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- icon font -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- header -->
+    <div
+      class="d-flex justify-content-between align-items-center p-8 px-16 inner-head"
+    >
+      <a href="/">
+        <img src="img/logo-icon.svg" class="h-30" alt />
+      </a>
+      <button class="open-btn d-lg-none" onclick="openMenu()">
+        <i class="ti ti-menu-2"></i>
+      </button>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" onclick="closeMenu()"></div>
+    <!-- Offcanvas Sidebar -->
+    <div id="offcanvas">
+      <div class="d-flex justify-content-between pb-16">
+        <a href="#">
+          <img src="img/logo-icon.svg" class="h-30" alt />
+        </a>
+        <button class="close-btn" onclick="closeMenu()">
+          <i class="ti ti-x text-white"></i>
+        </button>
+      </div>
+
+      <div class="Sidebar">
+        <div
+          class="black-box d-flex justify-content-center flex-column align-items-center mb-16"
+        >
+          <div class="logo-tournment">
+            <img src="img/tournment-img.png" alt="" />
+          </div>
+          <div class="mt-16">
+            <h1 class="h2 text-gradient">NBD Tour</h1>
+          </div>
+          <div class="mt-8 d-flex gap-16">
+            <div class="d-flex align-items-center gap-4">
+              <i class="ti ti-stopwatch text-brand fs-12"></i>
+              <span class="text-white opacity-50 fs-12">08:00PM</span>
+            </div>
+            <div class="d-flex align-items-center gap-4">
+              <i class="ti ti-calendar-due text-brand fs-12"></i>
+              <span class="text-white opacity-50 fs-12">20/03/2025</span>
+            </div>
+          </div>
+        </div>
+        <a href="tournment-detail.html" class="menu-list">
+          <i class="ti ti-eye"></i>overview
+        </a>
+        <div>
+          <img src="img/line.svg" alt="" />
+        </div>
+        <a href="tournment-player.html" class="menu-list">
+          <i class="ti ti-user"></i>Players
+        </a>
+
+        <div>
+          <img src="img/line.svg" alt="" />
+        </div>
+        <a href="tournment-check-in.html" class="menu-list">
+          <i class="ti ti-users"></i>check-in
+        </a>
+        <div>
+          <img src="img/line.svg" alt="" />
+        </div>
+        <a href="tournment-matches-a.html" class="menu-list">
+          <i class="ti ti-layout-grid"></i>Matches
+        </a>
+        <div>
+          <img src="img/line.svg" alt="" />
+        </div>
+        <a href="tournment-draw.html" class="menu-list">
+          <i class="ti ti-git-branch"></i>Draw
+        </a>
+        <div>
+          <img src="img/line.svg" alt="" />
+        </div>
+        <a href="qualification-a.html" class="menu-list active">
+          <i class="ti ti-user-circle"></i>Qualifieds
+        </a>
+      </div>
+    </div>
+
+    <section class="d-flex">
+      <div class="Sidebar d-none d-lg-block">
+        <div
+          class="black-box d-flex justify-content-center flex-column align-items-center mb-48"
+        >
+          <div class="logo-tournment">
+            <img src="img/tournment-img.png" alt="" />
+          </div>
+          <div class="mt-16">
+            <h1 class="h2 text-gradient">NBD Tour</h1>
+          </div>
+          <div class="mt-8 d-flex gap-4">
+            <div class="d-flex align-items-center gap-4">
+              <i class="ti ti-stopwatch text-brand"></i>
+              <span class="text-white opacity-50 fs-12">08:00PM</span>
+            </div>
+            <div class="d-flex align-items-center gap-4">
+              <i class="ti ti-calendar-due text-brand"></i>
+              <span class="text-white opacity-50 fs-12">20/03/2025</span>
+            </div>
+          </div>
+        </div>
+        <a href="tournment-detail.html" class="menu-list">
+          <i class="ti ti-eye"></i>overview
+        </a>
+        <div>
+          <img src="img/line.svg" alt="" />
+        </div>
+        <a href="tournment-player.html" class="menu-list">
+          <i class="ti ti-user"></i>Players
+        </a>
+
+        <div>
+          <img src="img/line.svg" alt="" />
+        </div>
+        <a href="tournment-check-in.html" class="menu-list">
+          <i class="ti ti-users"></i>check-in
+        </a>
+        <div>
+          <img src="img/line.svg" alt="" />
+        </div>
+        <a href="tournment-matches-a.html" class="menu-list">
+          <i class="ti ti-layout-grid"></i>Matches
+        </a>
+        <div>
+          <img src="img/line.svg" alt="" />
+        </div>
+        <a href="tournment-draw.html" class="menu-list">
+          <i class="ti ti-git-branch"></i>Draw
+        </a>
+        <div>
+          <img src="img/line.svg" alt="" />
+        </div>
+        <a href="qualification-a.html" class="menu-list active">
+          <i class="ti ti-user-circle"></i>Qualifieds
+        </a>
+      </div>
+
+      <div class="body-section w-100 no-padding-top">
+        <div class="p-24 p-lg-48 text-white">
+          <div class="d-flex gap-16 mobile-scroll mb-16">
+            <a href="qualification-a.html" class="box-group">
+              <div class="hexagon font-orbit">A</div>
+            </a>
+            <a href="qualification-b.html" class="box-group">
+              <div class="hexagon font-orbit b">B</div>
+            </a>
+            <a href="qualification-c.html" class="box-group">
+              <div class="hexagon font-orbit c">C</div>
+            </a>
+            <a href="qualification-d.html" class="box-group">
+              <div class="hexagon font-orbit d">D</div>
+            </a>
+            <a href="qualification-e.html" class="box-group">
+              <div class="hexagon font-orbit e e-active">E</div>
+            </a>
+            <a href="qualification-f.html" class="box-group">
+              <div class="hexagon font-orbit f">F</div>
+            </a>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <h3 class="fs-12 font-orbit text-gradient text-uppercase">
+                standings
+              </h3>
+              <div class="d-flex mt-16 align-items-center w-100">
+                <div class="w-fixed bg-h">TEAM</div>
+                <div class="bg-h strip w-100">MP</div>
+                <div class="bg-h w-100">w</div>
+                <div class="bg-h strip w-100">l</div>
+                <div class="bg-h w-100">G(W-L)</div>
+                <div class="bg-h strip w-100">GD</div>
+                <div class="bg-h w-100 round-last">r</div>
+              </div>
+              <div class="d-flex mt-16 align-items-center w-100">
+                <div class="w-fixed2 bg-h2 d-flex gap-8">
+                  <div class="hexagon font-orbit e-active">e1</div>
+                  <div class="d-flex">
+                    <div class="x-small-head">
+                      <img src="img/head-lady.avif" alt="" />
+                    </div>
+                    <div class="x-small-head over-head">
+                      <img src="img/head-lady.avif" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-h2 w-100 strip2">3</div>
+                <div class="bg-h2 w-100">1</div>
+                <div class="bg-h2 strip2 w-100">2</div>
+                <div class="bg-h2 w-100">11-7</div>
+                <div class="bg-h2 strip2 w-100">61</div>
+                <div class="bg-h2 w-100">3</div>
+              </div>
+              <div class="d-flex mt-16 align-items-center w-100">
+                <div class="w-fixed2 bg-h2 d-flex gap-8">
+                  <div class="hexagon font-orbit e-active">e2</div>
+                  <div class="d-flex">
+                    <div class="x-small-head">
+                      <img src="img/head-lady.avif" alt="" />
+                    </div>
+                    <div class="x-small-head over-head">
+                      <img src="img/head-lady.avif" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-h2 w-100 strip2">3</div>
+                <div class="bg-h2 w-100">1</div>
+                <div class="bg-h2 strip2 w-100">2</div>
+                <div class="bg-h2 w-100">11-7</div>
+                <div class="bg-h2 strip2 w-100">61</div>
+                <div class="bg-h2 w-100">3</div>
+              </div>
+              <div class="d-flex mt-16 align-items-center w-100">
+                <div class="w-fixed2 bg-h2 d-flex gap-8">
+                  <div class="hexagon font-orbit e-active">e3</div>
+                  <div class="d-flex">
+                    <div class="x-small-head">
+                      <img src="img/head-lady.avif" alt="" />
+                    </div>
+                    <div class="x-small-head over-head">
+                      <img src="img/head-lady.avif" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-h2 w-100 strip2">3</div>
+                <div class="bg-h2 w-100">1</div>
+                <div class="bg-h2 strip2 w-100">2</div>
+                <div class="bg-h2 w-100">11-7</div>
+                <div class="bg-h2 strip2 w-100">61</div>
+                <div class="bg-h2 w-100">3</div>
+              </div>
+              <div class="d-flex mt-16 align-items-center w-100 mb-48">
+                <div class="w-fixed2 bg-h2 d-flex gap-8">
+                  <div class="hexagon font-orbit e-active">e4</div>
+                  <div class="d-flex">
+                    <div class="x-small-head">
+                      <img src="img/head-lady.avif" alt="" />
+                    </div>
+                    <div class="x-small-head over-head">
+                      <img src="img/head-lady.avif" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-h2 w-100 strip2">3</div>
+                <div class="bg-h2 w-100">1</div>
+                <div class="bg-h2 strip2 w-100">2</div>
+                <div class="bg-h2 w-100">11-7</div>
+                <div class="bg-h2 strip2 w-100">61</div>
+                <div class="bg-h2 w-100">3</div>
+              </div>
+              <h3 class="fs-12 font-orbit text-gradient text-uppercase mb-16">
+                qualification highlights
+              </h3>
+              <div class="row">
+                <div class="col-lg-6 mb-16">
+                  <div class="card-inside">
+                    <div class="font-orbit fs-14 text-white w-100 text-center">
+                      TOP 1
+                    </div>
+                    <div class="pt-16 pb-16">
+                      <img src="img/line.svg" alt="" />
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <div class="w-fixed2 bg-h2 d-flex gap-8">
+                        <div class="hexagon font-orbit top-1">e3</div>
+                        <div class="d-flex">
+                          <div class="x-small-head">
+                            <img src="img/head-lady.avif" alt="" />
+                          </div>
+                          <div class="x-small-head over-head">
+                            <img src="img/head-lady.avif" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="font-orbit fs-14 text-brand text-uppercase">
+                        qualified
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-16">
+                  <div class="card-inside">
+                    <div class="font-orbit fs-14 text-white w-100 text-center">
+                      TOP 2
+                    </div>
+                    <div class="pt-16 pb-16">
+                      <img src="img/line.svg" alt="" />
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <div class="w-fixed2 bg-h2 d-flex gap-8">
+                        <div class="hexagon font-orbit top-2">e2</div>
+                        <div class="d-flex">
+                          <div class="x-small-head">
+                            <img src="img/head-lady.avif" alt="" />
+                          </div>
+                          <div class="x-small-head over-head">
+                            <img src="img/head-lady.avif" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="font-orbit fs-14 text-danger text-uppercase">
+                        eliminated
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-16">
+                  <div class="card-inside">
+                    <div class="font-orbit fs-14 text-white w-100 text-center">
+                      TOP 3
+                    </div>
+                    <div class="pt-16 pb-16">
+                      <img src="img/line.svg" alt="" />
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <div class="w-fixed2 bg-h2 d-flex gap-8">
+                        <div class="hexagon font-orbit top-3">e1</div>
+                        <div class="d-flex">
+                          <div class="x-small-head">
+                            <img src="img/head-lady.avif" alt="" />
+                          </div>
+                          <div class="x-small-head over-head">
+                            <img src="img/head-lady.avif" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="font-orbit fs-14 text-danger text-uppercase">
+                        eliminated
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-16">
+                  <div class="card-inside">
+                    <div class="font-orbit fs-14 text-white w-100 text-center">
+                      TOP 4
+                    </div>
+                    <div class="pt-16 pb-16">
+                      <img src="img/line.svg" alt="" />
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <div class="w-fixed2 bg-h2 d-flex gap-8">
+                        <div class="hexagon font-orbit top-3">e4</div>
+                        <div class="d-flex">
+                          <div class="x-small-head">
+                            <img src="img/head-lady.avif" alt="" />
+                          </div>
+                          <div class="x-small-head over-head">
+                            <img src="img/head-lady.avif" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="font-orbit fs-14 text-brand text-uppercase">
+                        qualified
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

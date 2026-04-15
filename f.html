@@ -1,264 +1,282 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Challexa</title>
     <!-- favicon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/favicon-96x96.png"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png" />
     <!-- main style -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- icon font -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- header -->
-    <div class="d-flex justify-content-between align-items-center p-8 px-16 inner-head">
-        <a href="/">
-            <img src="img/logo-icon.svg" class="h-30" alt>
-        </a>
-        <button class="open-btn d-lg-none" onclick="openMenu()"><i class="ti ti-menu-2"></i></button>
+    <div
+      class="d-flex justify-content-between align-items-center p-8 px-16 inner-head"
+    >
+      <a href="/">
+        <img src="img/logo-icon.svg" class="h-30" alt />
+      </a>
+      <button class="open-btn d-lg-none" onclick="openMenu()">
+        <i class="ti ti-menu-2"></i>
+      </button>
     </div>
 
     <!-- Overlay -->
     <div id="overlay" onclick="closeMenu()"></div>
     <!-- Offcanvas Sidebar -->
     <div id="offcanvas">
-        <div class="d-flex justify-content-between pb-16">
-            <a href="#">
-                <img src="img/logo-icon.svg" class="h-30" alt>
-            </a>
-            <button class="close-btn" onclick="closeMenu()"><i class="ti ti-x text-white"></i></button>
-        </div>
+      <div class="d-flex justify-content-between pb-16">
+        <a href="#">
+          <img src="img/logo-icon.svg" class="h-30" alt />
+        </a>
+        <button class="close-btn" onclick="closeMenu()">
+          <i class="ti ti-x text-white"></i>
+        </button>
+      </div>
 
-        <div class="Sidebar">
-            <div class="black-box d-flex justify-content-center flex-column align-items-center mb-16">
-                <div class="logo-tournment">
-                    <img src="img/tournment-img.png" alt="">
-                </div>
-                <div class="mt-16 ">
-                    <h1 class="h2 text-gradient">NBD Tour</h1>
-                </div>
-                <div class="mt-8 d-flex gap-16">
-                    <div class="d-flex align-items-center gap-4">
-                        <i class="ti ti-stopwatch text-brand fs-12"></i>
-                        <span class="text-white opacity-50 fs-12">08:00PM</span>
-                    </div>
-                    <div class="d-flex align-items-center gap-4">
-                        <i class="ti ti-calendar-due text-brand fs-12"></i>
-                        <span class="text-white opacity-50 fs-12">20/03/2025</span>
-                    </div>
-                </div>
+      <div class="Sidebar">
+        <div
+          class="black-box d-flex justify-content-center flex-column align-items-center mb-16"
+        >
+          <div class="logo-tournment">
+            <img src="img/tournment-img.png" alt="" />
+          </div>
+          <div class="mt-16">
+            <h1 class="h2 text-gradient">NBD Tour</h1>
+          </div>
+          <div class="mt-8 d-flex gap-16">
+            <div class="d-flex align-items-center gap-4">
+              <i class="ti ti-stopwatch text-brand fs-12"></i>
+              <span class="text-white opacity-50 fs-12">08:00PM</span>
             </div>
-            <a href="tournment-detail.html" class="menu-list">
-                <i class="ti ti-eye"></i>overview
-            </a>
-            <div>
-                <img src="img/line.svg" alt="">
+            <div class="d-flex align-items-center gap-4">
+              <i class="ti ti-calendar-due text-brand fs-12"></i>
+              <span class="text-white opacity-50 fs-12">20/03/2025</span>
             </div>
-            <a href="tournment-player.html" class="menu-list">
-                <i class="ti ti-user"></i>Players
-            </a>
-
-            <div>
-                <img src="img/line.svg" alt="">
-            </div>
-            <a href="tournment-check-in.html" class="menu-list">
-                <i class="ti ti-users"></i>check-in
-            </a>
-            <div>
-                <img src="img/line.svg" alt="">
-            </div>
-            <a href="tournment-matches-a.html" class="menu-list">
-                <i class="ti ti-layout-grid"></i>Matches
-            </a>
-            <div>
-                <img src="img/line.svg" alt="">
-            </div>
-            <a href="tournment-draw.html" class="menu-list active">
-                <i class="ti ti-git-branch"></i>Draw
-            </a>
+          </div>
         </div>
+        <a href="tournment-detail.html" class="menu-list">
+          <i class="ti ti-eye"></i>overview
+        </a>
+        <div>
+          <img src="img/line.svg" alt="" />
+        </div>
+        <a href="tournment-player.html" class="menu-list">
+          <i class="ti ti-user"></i>Players
+        </a>
+
+        <div>
+          <img src="img/line.svg" alt="" />
+        </div>
+        <a href="tournment-check-in.html" class="menu-list">
+          <i class="ti ti-users"></i>check-in
+        </a>
+        <div>
+          <img src="img/line.svg" alt="" />
+        </div>
+        <a href="tournment-matches-a.html" class="menu-list">
+          <i class="ti ti-layout-grid"></i>Matches
+        </a>
+        <div>
+          <img src="img/line.svg" alt="" />
+        </div>
+        <a href="tournment-draw.html" class="menu-list active">
+          <i class="ti ti-git-branch"></i>Draw
+        </a>
+      </div>
     </div>
 
     <section class="d-flex">
-        <div class="Sidebar d-none d-lg-block">
-            <div class="black-box d-flex justify-content-center flex-column align-items-center mb-48">
-                <div class="logo-tournment">
-                    <img src="img/tournment-img.png" alt="">
-                </div>
-                <div class="mt-16 ">
-                    <h1 class="h2 text-gradient">NBD Tour</h1>
-                </div>
-                <div class="mt-8 d-flex gap-4">
-                    <div class="d-flex align-items-center gap-4">
-                        <i class="ti ti-stopwatch text-brand"></i>
-                        <span class="text-white opacity-50 fs-12">08:00PM</span>
-                    </div>
-                    <div class="d-flex align-items-center gap-4">
-                        <i class="ti ti-calendar-due text-brand"></i>
-                        <span class="text-white opacity-50 fs-12">20/03/2025</span>
-                    </div>
-                </div>
+      <div class="Sidebar d-none d-lg-block">
+        <div
+          class="black-box d-flex justify-content-center flex-column align-items-center mb-48"
+        >
+          <div class="logo-tournment">
+            <img src="img/tournment-img.png" alt="" />
+          </div>
+          <div class="mt-16">
+            <h1 class="h2 text-gradient">NBD Tour</h1>
+          </div>
+          <div class="mt-8 d-flex gap-4">
+            <div class="d-flex align-items-center gap-4">
+              <i class="ti ti-stopwatch text-brand"></i>
+              <span class="text-white opacity-50 fs-12">08:00PM</span>
             </div>
-            <a href="tournment-detail.html" class="menu-list">
-                <i class="ti ti-eye"></i>overview
-            </a>
-            <div>
-                <img src="img/line.svg" alt="">
+            <div class="d-flex align-items-center gap-4">
+              <i class="ti ti-calendar-due text-brand"></i>
+              <span class="text-white opacity-50 fs-12">20/03/2025</span>
             </div>
-            <a href="tournment-player.html" class="menu-list">
-                <i class="ti ti-user"></i>Players
-            </a>
-            <div>
-                <img src="img/line.svg" alt="">
-            </div>
-
-            <a href="tournment-check-in.html" class="menu-list">
-                <i class="ti ti-users"></i>check-in
-            </a>
-            <div>
-                <img src="img/line.svg" alt="">
-            </div>
-            <a href="tournment-matches-a.html" class="menu-list">
-                <i class="ti ti-layout-grid"></i>Matches
-            </a>
-            <div>
-                <img src="img/line.svg" alt="">
-            </div>
-            <a href="tournment-draw.html" class="menu-list active">
-                <i class="ti ti-git-branch"></i>Draw
-            </a>
+          </div>
+        </div>
+        <a href="tournment-detail.html" class="menu-list">
+          <i class="ti ti-eye"></i>overview
+        </a>
+        <div>
+          <img src="img/line.svg" alt="" />
+        </div>
+        <a href="tournment-player.html" class="menu-list">
+          <i class="ti ti-user"></i>Players
+        </a>
+        <div>
+          <img src="img/line.svg" alt="" />
         </div>
 
-        <div class="body-section w-100">
-            <div class="menu-top">
-                <a href="tournment-draw.html">R16</a>
-                <a href="qf.html">QF</a>
-                <a href="sf.html">SF</a>
-                <a href="f.html" class="active">F</a>
-                <a href="w.html">W</a>
-            </div>
-            <div class="p-24 p-lg-48">
-                <div class="tmx-match-container">
-                    <div class="d-flex justify-content-center mb-48">
-                        <h2 class="h1 text-gradient">FINAL MATCH</h2>
-                    </div>
-
-                    <!-- Players -->
-                    <div class="tmx-match-players">
-                        <div class="tmx-player-card tmx-player-sm">
-                            <img src="img/head-lady.avif">
-                            <p class="fs-12">PRIYANKA</p>
-                        </div>
-
-                        <div class="tmx-player-card tmx-player-lg">
-                            <img src="img/head-lady.avif">
-                            <p class="fs-12">BAVEESH</p>
-                        </div>
-
-                        <div class="tmx-versus-text">VS</div>
-
-                        <div class="tmx-player-card tmx-player-lg">
-                            <img src="img/head-lady.avif">
-                            <p class="fs-12">PANDA</p>
-                        </div>
-
-                        <div class="tmx-player-card tmx-player-sm">
-                            <img src="img/head-lady.avif">
-                            <p class="fs-12">MATHEW</p>
-                        </div>
-                    </div>
-
-                    <!-- Score Sets -->
-                    <div class="tmx-sets-wrapper">
-                        <div class="tmx-set-row">
-                            <div class="tmx-score-box tmx-score-left">6</div>
-                            <span class="tmx-set-label">1ST SET</span>
-                            <div class="tmx-score-box tmx-score-right">4</div>
-                        </div>
-                        <div><img src="img/line.svg" alt=""></div>
-                        <div class="tmx-set-row">
-                            <div class="tmx-score-box tmx-score-left">1</div>
-                            <span class="tmx-set-label">2ND SET</span>
-                            <div class="tmx-score-box tmx-score-right">6</div>
-                        </div>
-                        <div><img src="img/line.svg" alt=""></div>
-                        <div class="tmx-set-row">
-                            <div class="tmx-score-box tmx-score-left">6</div>
-                            <span class="tmx-set-label">3RD SET</span>
-                            <div class="tmx-score-box tmx-score-right">4</div>
-                        </div>
-                    </div>
-
-                    <!-- Connector -->
-                    <div class="tmx-connector-wrap">
-                        <div class="tmx-connector-line"></div>
-                        <div class="tmx-connector-drop"></div>
-                    </div>
-
-                    <!-- Final Slots -->
-                    <div class="tmx-final-wrapper">
-                        <div class="tmx-final-slot d-flex justify-content-center align-items-center p-16">
-                            <img src="img/avatar.png" alt="">
-                        </div>
-                        <div class="tmx-final-slot d-flex justify-content-center align-items-center p-16">
-                            <img src="img/avatar.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <a href="tournment-check-in.html" class="menu-list">
+          <i class="ti ti-users"></i>check-in
+        </a>
+        <div>
+          <img src="img/line.svg" alt="" />
         </div>
+        <a href="tournment-matches-a.html" class="menu-list">
+          <i class="ti ti-layout-grid"></i>Matches
+        </a>
+        <div>
+          <img src="img/line.svg" alt="" />
+        </div>
+        <a href="tournment-draw.html" class="menu-list active">
+          <i class="ti ti-git-branch"></i>Draw
+        </a>
+      </div>
+
+      <div class="body-section w-100">
+        <div class="menu-top">
+          <a href="tournment-draw.html">R16</a>
+          <a href="qf.html">QF</a>
+          <a href="sf.html">SF</a>
+          <a href="f.html" class="active">F</a>
+          <a href="w.html">W</a>
+        </div>
+        <div class="p-24 p-lg-48">
+          <div class="tmx-match-container">
+            <div class="d-flex justify-content-center mb-48">
+              <h2 class="h1 text-gradient">FINAL MATCH</h2>
+            </div>
+
+            <!-- Players -->
+            <div class="tmx-match-players">
+              <div class="tmx-player-card tmx-player-sm">
+                <img src="img/head-lady.avif" />
+                <p class="fs-12">PRIYANKA</p>
+              </div>
+
+              <div class="tmx-player-card tmx-player-lg">
+                <img src="img/head-lady.avif" />
+                <p class="fs-12">BAVEESH</p>
+              </div>
+
+              <div class="tmx-versus-text">VS</div>
+
+              <div class="tmx-player-card tmx-player-lg">
+                <img src="img/head-lady.avif" />
+                <p class="fs-12">PANDA</p>
+              </div>
+
+              <div class="tmx-player-card tmx-player-sm">
+                <img src="img/head-lady.avif" />
+                <p class="fs-12">MATHEW</p>
+              </div>
+            </div>
+
+            <!-- Score Sets -->
+            <div class="tmx-sets-wrapper">
+              <div class="tmx-set-row">
+                <div class="tmx-score-box tmx-score-left">6</div>
+                <span class="tmx-set-label">1ST SET</span>
+                <div class="tmx-score-box tmx-score-right">4</div>
+              </div>
+              <div><img src="img/line.svg" alt="" /></div>
+              <div class="tmx-set-row">
+                <div class="tmx-score-box tmx-score-left">1</div>
+                <span class="tmx-set-label">2ND SET</span>
+                <div class="tmx-score-box tmx-score-right">6</div>
+              </div>
+              <div><img src="img/line.svg" alt="" /></div>
+              <div class="tmx-set-row">
+                <div class="tmx-score-box tmx-score-left">6</div>
+                <span class="tmx-set-label">3RD SET</span>
+                <div class="tmx-score-box tmx-score-right">4</div>
+              </div>
+            </div>
+
+            <!-- Connector -->
+            <div class="tmx-connector-wrap">
+              <div class="tmx-connector-line"></div>
+              <div class="tmx-connector-drop"></div>
+            </div>
+
+            <!-- Final Slots -->
+            <div class="tmx-final-wrapper">
+              <div
+                class="tmx-final-slot d-flex justify-content-center align-items-center p-16"
+              >
+                <img src="img/avatar.png" alt="" />
+              </div>
+              <div
+                class="tmx-final-slot d-flex justify-content-center align-items-center p-16"
+              >
+                <img src="img/avatar.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
 
     <!-- score add modal -->
     <div class="modal-overlay">
-        <div class="modal-content">
-            <div class="modal-header d-flex align-items-center justify-content-between">
-                <h2>REPORT</h2>
-                <button class="close-btn"><i class="ti ti-square-x"></i></button>
-            </div>
-
-            <div class="selection-section">
-                <label>ENTER YOUR 4-DIGIT TEAM CODE</label>
-                <div class="button-group">
-                    <input type="text" class="code-input w-100" value="CHF1">
-                </div>
-            </div>
-            <div class="score-section">
-                <div class="d-flex justify-content-between">
-                    <label>TEAM</label>
-                    <label>SOCRE</label>
-                </div>
-
-                <div class="score-row">
-                    <div class="team-info">
-                        <span class="team-id">F3</span>
-                        <div class="avatars">
-                            <img src="img/head-lady.avif" alt="p1">
-                            <img src="img/head-lady.avif" alt="p2">
-                        </div>
-                    </div>
-                    <input type="number" class="score-input" value="3">
-                </div>
-            </div>
-
-            <button class="submit-btn">Submit</button>
+      <div class="modal-content">
+        <div
+          class="modal-header d-flex align-items-center justify-content-between"
+        >
+          <h2>REPORT</h2>
+          <button class="close-btn"><i class="ti ti-square-x"></i></button>
         </div>
+
+        <div class="selection-section">
+          <label>ENTER YOUR 4-DIGIT TEAM CODE</label>
+          <div class="button-group">
+            <input type="text" class="code-input w-100" value="CHF1" />
+          </div>
+        </div>
+        <div class="score-section">
+          <div class="d-flex justify-content-between">
+            <label>TEAM</label>
+            <label>SOCRE</label>
+          </div>
+
+          <div class="score-row">
+            <div class="team-info">
+              <span class="team-id">F3</span>
+              <div class="avatars">
+                <img src="img/head-lady.avif" alt="p1" />
+                <img src="img/head-lady.avif" alt="p2" />
+              </div>
+            </div>
+            <input type="number" class="score-input" value="3" />
+          </div>
+        </div>
+
+        <button class="submit-btn">Submit</button>
+      </div>
     </div>
 
     <!-- script -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-
-</body>
-
+  </body>
 </html>

@@ -1,179 +1,275 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Challexa</title>
     <!-- favicon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/favicon-96x96.png"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png" />
     <!-- main style -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- icon font -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <header class="d-flex justify-content-between align-items-center px-16">
-        <a href="/">
-            <img src="img/logo.svg" alt>
-        </a>
-        <nav class="d-none d-lg-block">
-            <ul class="d-flex gap-4">
-                <li><a href="/">Home</a></li>
-                <li><a href="register.html">Register</a></li>
-                <li><a href="about.html" class="active">About Challexa</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="sign-in.html">Sign In</a></li>
-                <li><a href="sign-up.html" class="text-brand">Sign Up</a></li>
-            </ul>
-        </nav>
-        <button class="open-btn d-lg-none" onclick="openMenu()"><i class="ti ti-menu-2"></i></button>
+      <a href="/">
+        <img src="img/logo.svg" alt />
+      </a>
+      <nav class="d-none d-lg-block">
+        <ul class="d-flex gap-4">
+          <li><a href="/">Home</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="about.html" class="active">About Challexa</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="sign-in.html">Sign In</a></li>
+          <li><a href="sign-up.html" class="text-brand">Sign Up</a></li>
+        </ul>
+      </nav>
+      <button class="open-btn d-lg-none" onclick="openMenu()">
+        <i class="ti ti-menu-2"></i>
+      </button>
     </header>
 
     <!-- Overlay -->
     <div id="overlay" onclick="closeMenu()"></div>
     <!-- Offcanvas Sidebar -->
     <div id="offcanvas">
-        <div class="d-flex justify-content-between pb-16">
-            <a href="#">
-                <img src="img/logo-icon.svg" alt>
-            </a>
-            <button class="close-btn" onclick="closeMenu()"><i class="ti ti-x text-white"></i></button>
-        </div>
+      <div class="d-flex justify-content-between pb-16">
+        <a href="#">
+          <img src="img/logo-icon.svg" alt />
+        </a>
+        <button class="close-btn" onclick="closeMenu()">
+          <i class="ti ti-x text-white"></i>
+        </button>
+      </div>
 
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/register.html">Register</a></li>
-            <li><a href="/about.html">About Challexa</a></li>
-            <li><a href="/faq.html">FAQ</a></li>
-        </ul>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/register.html">Register</a></li>
+        <li><a href="/about.html">About Challexa</a></li>
+        <li><a href="/faq.html">FAQ</a></li>
+      </ul>
 
-        <ul>
-            <li><a href="sign-in.html">Sign In</a></li>
-            <li><a href="sign-up.html" class="text-brand">Sign Up</a></li>
-        </ul>
+      <ul>
+        <li><a href="sign-in.html">Sign In</a></li>
+        <li><a href="sign-up.html" class="text-brand">Sign Up</a></li>
+      </ul>
 
-        <ul>
-            <li class="pt-24"><a href="#" class="small">Terms & Conditions</a></li>
-            <li><a href="#" class="small">Privacy Policy</a></li>
-            <li><a href="#" class="small">Help</a></li>
-        </ul>
+      <ul>
+        <li class="pt-24"><a href="#" class="small">Terms & Conditions</a></li>
+        <li><a href="#" class="small">Privacy Policy</a></li>
+        <li><a href="#" class="small">Help</a></li>
+      </ul>
     </div>
 
     <section class="pt-48">
-        <div class="container">
-            <h3 class="h3 text-white mb-16">Who We Are</h3>
-            <p class="text-paragraph text-white mb-8 opacity-50">Challexa is a structured competitive platform built for racket
-                sports communities.</p>
-            <p class="text-paragraph text-white mb-8 opacity-50">We organize ladders, tournaments, and verified ranking systems
-                that transform casual matches into meaningful competition.</p>
-            <p class="text-paragraph text-white mb-8 opacity-50">We exist to bring clarity, fairness, and progression to local
-                sports communities.</p>
-            <h3 class="h4 text-white mb-16 heading-block mt-24">Why We Started</h3>
-            <p class="text-paragraph text-white mb-8 opacity-50">Most local sports communities face the same problems:</p>
-            <p class="text-paragraph text-white mb-8 opacity-50">No official ranking</p>
-            <p class="text-paragraph text-white mb-8 opacity-50">Unclear player levels</p>
-            <p class="text-paragraph text-white mb-8 opacity-50">Disorganized tournaments</p>
-            <p class="text-paragraph text-white mb-8 opacity-50">Results that are not tracked </p>
-            <p class="text-paragraph text-white mb-16 opacity-50">Politics over performance</p>
-            <p class="text-paragraph text-white mb-8 opacity-50">Challexa was created to fix that.</p>
-            <p class="text-paragraph text-white mb-16 opacity-50">We believe every player deserves:</p>
-            <p class="text-paragraph text-white mb-8 opacity-50">
-                A fair system</p>
-            <p class="text-paragraph text-white mb-8 opacity-50">Transparent progression</p>
-            <p class="text-paragraph text-white mb-16 opacity-50">Recognized results</p>
-            <p class="text-paragraph text-white mb-8 opacity-50">Structure creates opportunity.</p>
-            <h3 class="h4 text-white mb-16 heading-block mt-24">What We Do</h3>
-            <p class="text-paragraph text-white mb-8 opacity-50">Challexa provides:</p>
-            <p class="text-paragraph text-white mb-16 opacity-50">🎯 Competitive Ladder System<br>
-                Players challenge, defend, and climb through structured eligibility rules.</p>
-            <p class="text-paragraph text-white mb-16 opacity-50">🏆 One-Off Championship Tournaments<br>
-                Professionally organized formats.</p>
-            <p class="text-paragraph text-white mb-16 opacity-50">📊 Verified Rating & Tier Progression<br>
-                Performance-based ranking system with measurable growth.</p>
-            <p class="text-paragraph text-white mb-16 opacity-50">📺 Live Event Technology<br>
-                Digital draws, live standings, QR check-in, and automated match tracking.</p>
-            <h3 class="h4 text-white mb-16 heading-block mt-24">Our Philosophy</h3>
-            <p class="text-paragraph text-white mb-16 opacity-50">We operate on three core principles:</p>
-            <p class="text-paragraph text-white mb-8 opacity-50">
-                1. Structure creates fairness<br>
-                Clear rules remove bias.
-            </p>
-            <p class="text-paragraph text-white mb-8 opacity-50">
-                2. Transparency builds trust<br>
-                Rankings and results are visible and verifiable.
-            </p>
-            <p class="text-paragraph text-white mb-8 opacity-50">
-                3. Progression drives motivation<br>
-                Players stay engaged when they can see growth.
-            </p>
+      <div class="container">
+        <h3 class="h3 text-white mb-16">Who We Are</h3>
+        <p class="text-paragraph text-white mb-8 opacity-50">
+          Challexa is a structured competitive platform built for racket sports
+          communities.
+        </p>
+        <p class="text-paragraph text-white mb-8 opacity-50">
+          We organize ladders, tournaments, and verified ranking systems that
+          transform casual matches into meaningful competition.
+        </p>
+        <p class="text-paragraph text-white mb-8 opacity-50">
+          We exist to bring clarity, fairness, and progression to local sports
+          communities.
+        </p>
+        <h3 class="h4 text-white mb-16 heading-block mt-24">Why We Started</h3>
+        <p class="text-paragraph text-white mb-8 opacity-50">
+          Most local sports communities face the same problems:
+        </p>
+        <p class="text-paragraph text-white mb-8 opacity-50">
+          No official ranking
+        </p>
+        <p class="text-paragraph text-white mb-8 opacity-50">
+          Unclear player levels
+        </p>
+        <p class="text-paragraph text-white mb-8 opacity-50">
+          Disorganized tournaments
+        </p>
+        <p class="text-paragraph text-white mb-8 opacity-50">
+          Results that are not tracked
+        </p>
+        <p class="text-paragraph text-white mb-16 opacity-50">
+          Politics over performance
+        </p>
+        <p class="text-paragraph text-white mb-8 opacity-50">
+          Challexa was created to fix that.
+        </p>
+        <p class="text-paragraph text-white mb-16 opacity-50">
+          We believe every player deserves:
+        </p>
+        <p class="text-paragraph text-white mb-8 opacity-50">A fair system</p>
+        <p class="text-paragraph text-white mb-8 opacity-50">
+          Transparent progression
+        </p>
+        <p class="text-paragraph text-white mb-16 opacity-50">
+          Recognized results
+        </p>
+        <p class="text-paragraph text-white mb-8 opacity-50">
+          Structure creates opportunity.
+        </p>
+        <h3 class="h4 text-white mb-16 heading-block mt-24">What We Do</h3>
+        <p class="text-paragraph text-white mb-8 opacity-50">
+          Challexa provides:
+        </p>
+        <p class="text-paragraph text-white mb-16 opacity-50">
+          🎯 Competitive Ladder System<br />
+          Players challenge, defend, and climb through structured eligibility
+          rules.
+        </p>
+        <p class="text-paragraph text-white mb-16 opacity-50">
+          🏆 One-Off Championship Tournaments<br />
+          Professionally organized formats.
+        </p>
+        <p class="text-paragraph text-white mb-16 opacity-50">
+          📊 Verified Rating & Tier Progression<br />
+          Performance-based ranking system with measurable growth.
+        </p>
+        <p class="text-paragraph text-white mb-16 opacity-50">
+          📺 Live Event Technology<br />
+          Digital draws, live standings, QR check-in, and automated match
+          tracking.
+        </p>
+        <h3 class="h4 text-white mb-16 heading-block mt-24">Our Philosophy</h3>
+        <p class="text-paragraph text-white mb-16 opacity-50">
+          We operate on three core principles:
+        </p>
+        <p class="text-paragraph text-white mb-8 opacity-50">
+          1. Structure creates fairness<br />
+          Clear rules remove bias.
+        </p>
+        <p class="text-paragraph text-white mb-8 opacity-50">
+          2. Transparency builds trust<br />
+          Rankings and results are visible and verifiable.
+        </p>
+        <p class="text-paragraph text-white mb-8 opacity-50">
+          3. Progression drives motivation<br />
+          Players stay engaged when they can see growth.
+        </p>
 
-            <h3 class="h4 text-white mb-16 heading-block mt-24">Our Vision</h3>
-            <p class="text-paragraph text-white mb-16 opacity-50">To become the competitive infrastructure layer for racket sports
-                communities — connecting players, clubs, and tournaments under one structured system.</p>
-            <p class="text-paragraph text-white mb-16 opacity-50">Starting locally.</p>
-            <p class="text-paragraph text-white mb-8 opacity-50">Scaling regionally.</p>
-            <p class="text-paragraph text-white mb-8 opacity-50">Built globally.</p>
+        <h3 class="h4 text-white mb-16 heading-block mt-24">Our Vision</h3>
+        <p class="text-paragraph text-white mb-16 opacity-50">
+          To become the competitive infrastructure layer for racket sports
+          communities — connecting players, clubs, and tournaments under one
+          structured system.
+        </p>
+        <p class="text-paragraph text-white mb-16 opacity-50">
+          Starting locally.
+        </p>
+        <p class="text-paragraph text-white mb-8 opacity-50">
+          Scaling regionally.
+        </p>
+        <p class="text-paragraph text-white mb-8 opacity-50">Built globally.</p>
 
-            <h3 class="h4 text-white mb-16 heading-block mt-24">Who Challexa Is For</h3>
-            <p class="text-paragraph text-white mb-16 opacity-50">Competitive & social club players<br>
-            <p class="text-paragraph text-white mb-8 opacity-50">Organized sports facilities</p>
-            <p class="text-paragraph text-white mb-8 opacity-50">Tournament organizers</p>
-            <p class="text-paragraph text-white mb-8 opacity-50">Racket sports communities</p>
-            <p class="text-paragraph text-white mb-8 opacity-50">Sponsors seeking structured exposure</p>
+        <h3 class="h4 text-white mb-16 heading-block mt-24">
+          Who Challexa Is For
+        </h3>
+        <p class="text-paragraph text-white mb-16 opacity-50">
+          Competitive & social club players<br />
+        </p>
+        <p class="text-paragraph text-white mb-8 opacity-50">
+          Organized sports facilities
+        </p>
+        <p class="text-paragraph text-white mb-8 opacity-50">
+          Tournament organizers
+        </p>
+        <p class="text-paragraph text-white mb-8 opacity-50">
+          Racket sports communities
+        </p>
+        <p class="text-paragraph text-white mb-8 opacity-50">
+          Sponsors seeking structured exposure
+        </p>
 
-            <h3 class="h4 text-white mb-16 heading-block mt-24">What Makes Challexa Different</h3>
-            <p class="text-paragraph text-white mb-16 opacity-50">Unlike booking apps, Challexa focuses on:</p>
-            <p class="text-paragraph text-white mb-8 opacity-50">Competitive integrity</p>
-            <p class="text-paragraph text-white mb-16 opacity-50">Tier-based eligibility</p>
-            <p class="text-paragraph text-white mb-16 opacity-50">Structured tournament logic</p>
-            <p class="text-paragraph text-white mb-16 opacity-50">Digital automation</p>
-            <p class="text-paragraph text-white mb-16 opacity-50">Real player progression</p>
-            <p class="text-paragraph text-white mb-16 opacity-50">We don’t just help you play.</p>
-            <p class="text-paragraph text-white mb-16 opacity-50">We help you compete with purpose.</p>
-            <h3 class="h4 text-white mb-16 heading-block mt-24">Founder’s Note</h3>
-            <div class="p-16 box-founder">
-                <div class="box-round">
-                    <img src="img/head.png" alt="">
-                </div>
-                <p class="text-paragraph text-white mb-16 opacity-50">Challexa began with a simple observation: in competition, 
-                </p>
-                <p class="text-paragraph text-white mb-16 opacity-50">Too often, effort disappears. Wins are forgotten. Progress
-                    goes unseen.
-                </p>
-                <p class="text-paragraph text-white mb-16 opacity-50">And when progress is unseen, motivation fades.
-                </p>
-                <p class="text-paragraph text-white mb-16 opacity-50">I built Challexa because I believe competition should mean
-                    something. It’s a journey of identity—of discovering where you stand, and how far you’re willing to
-                    go. It is not just a system. It’s a story—your story—told through structure, discipline, and earned
-                    achievement.
-                </p>
-                <p class="text-paragraph text-white mb-16 opacity-50">Challexa exists for competitors who want growth, not comfort.
-                </p>
-                <p class="text-paragraph text-white mb-16 opacity-50">For those willing to be measured. Willing to be challenged.
-                    Willing to rise through structure.
-                </p>
-                <p class="text-paragraph text-white mb-16 opacity-50">Welcome to Challexa!?<br>
-                    Let’s grow with structure. Let’s compete with respect.
-                </p>
-                <p class="text-paragraph text-white mb-16 opacity-50">Where every match counts, and every step forward becomes part
-                    of who you are becoming.Because real progress is not given. It is earned.
-                </p>
-                <b class="text-brand">Arnel Berdan</b>
-                 <p class="text-paragraph text-white mb-16 opacity-50">Founder, Challexa</p>
-            </div>
+        <h3 class="h4 text-white mb-16 heading-block mt-24">
+          What Makes Challexa Different
+        </h3>
+        <p class="text-paragraph text-white mb-16 opacity-50">
+          Unlike booking apps, Challexa focuses on:
+        </p>
+        <p class="text-paragraph text-white mb-8 opacity-50">
+          Competitive integrity
+        </p>
+        <p class="text-paragraph text-white mb-16 opacity-50">
+          Tier-based eligibility
+        </p>
+        <p class="text-paragraph text-white mb-16 opacity-50">
+          Structured tournament logic
+        </p>
+        <p class="text-paragraph text-white mb-16 opacity-50">
+          Digital automation
+        </p>
+        <p class="text-paragraph text-white mb-16 opacity-50">
+          Real player progression
+        </p>
+        <p class="text-paragraph text-white mb-16 opacity-50">
+          We don’t just help you play.
+        </p>
+        <p class="text-paragraph text-white mb-16 opacity-50">
+          We help you compete with purpose.
+        </p>
+        <h3 class="h4 text-white mb-16 heading-block mt-24">Founder’s Note</h3>
+        <div class="p-16 box-founder">
+          <div class="box-round">
+            <img src="img/head.png" alt="" />
+          </div>
+          <p class="text-paragraph text-white mb-16 opacity-50">
+            Challexa began with a simple observation: in competition, 
+          </p>
+          <p class="text-paragraph text-white mb-16 opacity-50">
+            Too often, effort disappears. Wins are forgotten. Progress goes
+            unseen.
+          </p>
+          <p class="text-paragraph text-white mb-16 opacity-50">
+            And when progress is unseen, motivation fades.
+          </p>
+          <p class="text-paragraph text-white mb-16 opacity-50">
+            I built Challexa because I believe competition should mean
+            something. It’s a journey of identity—of discovering where you
+            stand, and how far you’re willing to go. It is not just a system.
+            It’s a story—your story—told through structure, discipline, and
+            earned achievement.
+          </p>
+          <p class="text-paragraph text-white mb-16 opacity-50">
+            Challexa exists for competitors who want growth, not comfort.
+          </p>
+          <p class="text-paragraph text-white mb-16 opacity-50">
+            For those willing to be measured. Willing to be challenged. Willing
+            to rise through structure.
+          </p>
+          <p class="text-paragraph text-white mb-16 opacity-50">
+            Welcome to Challexa!?<br />
+            Let’s grow with structure. Let’s compete with respect.
+          </p>
+          <p class="text-paragraph text-white mb-16 opacity-50">
+            Where every match counts, and every step forward becomes part of who
+            you are becoming.Because real progress is not given. It is earned.
+          </p>
+          <b class="text-brand">Arnel Berdan</b>
+          <p class="text-paragraph text-white mb-16 opacity-50">
+            Founder, Challexa
+          </p>
         </div>
+      </div>
     </section>
 
     <!-- script -->
     <script type="text/javascript" src="js/main.js"></script>
-
-</body>
-
+  </body>
 </html>

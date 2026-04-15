@@ -1,299 +1,283 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Challexa</title>
     <!-- favicon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/favicon-96x96.png"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png" />
     <!-- main style -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- icon font -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- header -->
-    <div class="d-flex justify-content-between align-items-center p-8 px-16 inner-head">
-        <a href="/">
-            <img src="img/logo-icon.svg" class="h-30" alt>
-        </a>
-        <button class="open-btn d-lg-none" onclick="openMenu()"><i class="ti ti-menu-2"></i></button>
+    <div
+      class="d-flex justify-content-between align-items-center p-8 px-16 inner-head"
+    >
+      <a href="/">
+        <img src="img/logo-icon.svg" class="h-30" alt />
+      </a>
+      <button class="open-btn d-lg-none" onclick="openMenu()">
+        <i class="ti ti-menu-2"></i>
+      </button>
     </div>
 
     <!-- Overlay -->
     <div id="overlay" onclick="closeMenu()"></div>
     <!-- Offcanvas Sidebar -->
     <div id="offcanvas">
-        <div class="d-flex justify-content-between pb-16">
-            <a href="#">
-                <img src="img/logo-icon.svg" class="h-30" alt>
-            </a>
-            <button class="close-btn" onclick="closeMenu()"><i class="ti ti-x text-white"></i></button>
-        </div>
+      <div class="d-flex justify-content-between pb-16">
+        <a href="#">
+          <img src="img/logo-icon.svg" class="h-30" alt />
+        </a>
+        <button class="close-btn" onclick="closeMenu()">
+          <i class="ti ti-x text-white"></i>
+        </button>
+      </div>
 
-        <div class="Sidebar">
-            <div class="black-box d-flex justify-content-center flex-column align-items-center mb-16">
-                <div class="logo-tournment">
-                    <img src="img/tournment-img.png" alt="">
-                </div>
-                <div class="mt-16 ">
-                    <h1 class="h2 text-gradient">NBD Tour</h1>
-                </div>
-                <div class="mt-8 d-flex gap-16">
-                    <div class="d-flex align-items-center gap-4">
-                        <i class="ti ti-stopwatch text-brand fs-12"></i>
-                        <span class="text-white opacity-50 fs-12">08:00PM</span>
-                    </div>
-                    <div class="d-flex align-items-center gap-4">
-                        <i class="ti ti-calendar-due text-brand fs-12"></i>
-                        <span class="text-white opacity-50 fs-12">20/03/2025</span>
-                    </div>
-                </div>
+      <div class="Sidebar">
+        <div
+          class="black-box d-flex justify-content-center flex-column align-items-center mb-16"
+        >
+          <div class="logo-tournment">
+            <img src="img/tournment-img.png" alt="" />
+          </div>
+          <div class="mt-16">
+            <h1 class="h2 text-gradient">NBD Tour</h1>
+          </div>
+          <div class="mt-8 d-flex gap-16">
+            <div class="d-flex align-items-center gap-4">
+              <i class="ti ti-stopwatch text-brand fs-12"></i>
+              <span class="text-white opacity-50 fs-12">08:00PM</span>
             </div>
-            <a href="tournment-detail.html" class="menu-list active">
-                <i class="ti ti-eye"></i>overview
-            </a>
-            <div>
-                <img src="img/line.svg" alt="">
+            <div class="d-flex align-items-center gap-4">
+              <i class="ti ti-calendar-due text-brand fs-12"></i>
+              <span class="text-white opacity-50 fs-12">20/03/2025</span>
             </div>
-            <a href="tournment-player.html" class="menu-list">
-                <i class="ti ti-user"></i>Players
-            </a>
-
-            <div>
-                <img src="img/line.svg" alt="">
-            </div>
-            <a href="tournment-check-in.html" class="menu-list">
-                <i class="ti ti-users"></i>check-in
-            </a>
-            <div>
-                <img src="img/line.svg" alt="">
-            </div>
-            <a href="tournment-matches-a.html" class="menu-list">
-                <i class="ti ti-layout-grid"></i>Matches
-            </a>
-            <div>
-                <img src="img/line.svg" alt="">
-            </div>
-            <a href="tournment-draw.html" class="menu-list">
-                <i class="ti ti-git-branch"></i>Draw
-            </a>
+          </div>
         </div>
+        <a href="tournment-detail.html" class="menu-list active">
+          <i class="ti ti-eye"></i>overview
+        </a>
+        <div>
+          <img src="img/line.svg" alt="" />
+        </div>
+        <a href="tournment-player.html" class="menu-list">
+          <i class="ti ti-user"></i>Players
+        </a>
+
+        <div>
+          <img src="img/line.svg" alt="" />
+        </div>
+        <a href="tournment-check-in.html" class="menu-list">
+          <i class="ti ti-users"></i>check-in
+        </a>
+        <div>
+          <img src="img/line.svg" alt="" />
+        </div>
+        <a href="tournment-matches-a.html" class="menu-list">
+          <i class="ti ti-layout-grid"></i>Matches
+        </a>
+        <div>
+          <img src="img/line.svg" alt="" />
+        </div>
+        <a href="tournment-draw.html" class="menu-list">
+          <i class="ti ti-git-branch"></i>Draw
+        </a>
+        <div>
+          <img src="img/line.svg" alt="" />
+        </div>
+        <a href="qualification-a.html" class="menu-list">
+          <i class="ti ti-user-circle"></i>Qualifieds
+        </a>
+      </div>
     </div>
 
     <section class="d-flex">
-         <div class="Sidebar d-none d-lg-block">
-            <div class="black-box d-flex justify-content-center flex-column align-items-center mb-48">
-                <div class="logo-tournment">
-                    <img src="img/tournment-img.png" alt="">
-                </div>
-                <div class="mt-16 ">
-                    <h1 class="h2 text-gradient">NBD Tour</h1>
-                </div>
-                <div class="mt-8 d-flex gap-4">
-                    <div class="d-flex align-items-center gap-4">
-                        <i class="ti ti-stopwatch text-brand"></i>
-                        <span class="text-white opacity-50 fs-12">08:00PM</span>
-                    </div>
-                    <div class="d-flex align-items-center gap-4">
-                        <i class="ti ti-calendar-due text-brand"></i>
-                        <span class="text-white opacity-50 fs-12">20/03/2025</span>
-                    </div>
-                </div>
+      <div class="Sidebar d-none d-lg-block">
+        <div
+          class="black-box d-flex justify-content-center flex-column align-items-center mb-48"
+        >
+          <div class="logo-tournment">
+            <img src="img/tournment-img.png" alt="" />
+          </div>
+          <div class="mt-16">
+            <h1 class="h2 text-gradient">NBD Tour</h1>
+          </div>
+          <div class="mt-8 d-flex gap-4">
+            <div class="d-flex align-items-center gap-4">
+              <i class="ti ti-stopwatch text-brand"></i>
+              <span class="text-white opacity-50 fs-12">08:00PM</span>
             </div>
-            <a href="tournment-detail.html" class="menu-list active">
-                <i class="ti ti-eye"></i>overview
-            </a>
-            <div>
-                <img src="img/line.svg" alt="">
+            <div class="d-flex align-items-center gap-4">
+              <i class="ti ti-calendar-due text-brand"></i>
+              <span class="text-white opacity-50 fs-12">20/03/2025</span>
             </div>
-            <a href="tournment-player.html" class="menu-list">
-                <i class="ti ti-user"></i>Players
-            </a>
-            <div>
-                <img src="img/line.svg" alt="">
-            </div>
-
-            <a href="tournment-check-in.html" class="menu-list">
-                <i class="ti ti-users"></i>check-in
-            </a>
-            <div>
-                <img src="img/line.svg" alt="">
-            </div>
-            <a href="tournment-matches-a.html" class="menu-list">
-                <i class="ti ti-layout-grid"></i>Matches
-            </a>
-            <div>
-                <img src="img/line.svg" alt="">
-            </div>
-            <a href="tournment-draw.html" class="menu-list">
-                <i class="ti ti-git-branch"></i>Draw
-            </a>
+          </div>
+        </div>
+        <a href="tournment-detail.html" class="menu-list active">
+          <i class="ti ti-eye"></i>overview
+        </a>
+        <div>
+          <img src="img/line.svg" alt="" />
+        </div>
+        <a href="tournment-player.html" class="menu-list">
+          <i class="ti ti-user"></i>Players
+        </a>
+        <div>
+          <img src="img/line.svg" alt="" />
         </div>
 
-        <div class="body-section w-100">
-            <div class="menu-top">
-                <a href="tournment-detail.html">OVERVIEW</a>
-                <a href="format.html">FORMAT</a>
-                <a href="rules.html" class="active">RULES</a>
-                <a href="prize.html">PRIZE</a>
-            </div>
-            <div class="p-24 p-lg-48 text-white rules">
-                <h3 class="h2 text-gradient mb-48">RULES</h3>
-                <div class="head-rule mb-16">MATCH FORMAT</div>
-                <ul>
-                    <li>One set to 6 games</li>
-                    <li>Golden point at deuce</li>
-                    <li>6-6 → 7-point tiebreak</li>
-                </ul>
-                <div class="head-rule mt-16 mb-16">WARM-UP</div>
-                <p class="fs-14">Maximum 3 minutes only</p>
-                <div class="head-rule mt-16 mb-16">TIME POLICY</div>
-                <p class="fs-14">Teams must be ready within 5 minutes of call</p>
-                <div class="head-rule mt-16 mb-16">GROUP RANKING TIE BREAK</div>
-                <ol>
-                    <li>Matches Won</li>
-                    <li>Game Difference</li>
-                    <li>Head-to-Head</li>
-                    <li>Sudden Death Point</li>
-                </ol>
-                <div class="head-rule mt-16 mb-16">COACHING</div>
-                <p class="fs-14">Allowed only between games</p>
-                <div class="head-rule mt-16 mb-16">INJURY</div>
-                <p class="fs-14">5 minute medical timeout allowed once</p>
-                <div class="head-rule mt-16 mb-16">CONDUCT</div>
-                <p class="fs-14">Unsportsmanlike behavior = game penalty</p>
-                <div class="head-rule mt-16 mb-16">COACHING</div>
-                <p class="fs-14">Allowed only between games</p>
-                <div class="head-rule mt-16 mb-16">FINALS</div>
-                <p class="fs-14">FINALS</p>
-                <div class="head-rule mt-16 mb-16">CHALLEXA OFFICIAL DISPUTE & REFEREE PROTOCOL</div>
-                <i class="fs-14">(Simple, firm, non-negotiable)</i>
-                <p class="fs-14">Your golden principle:</p>
-                <p class="fs-14">Players decide points.</p>
-                <p class="fs-14">Referee decides conflicts.</p>
-                <div class="head-rule mt-16 mb-16">TYPES OF DISPUTES</div>
-                <p class="fs-14">
-                    We only recognize 3 official dispute categories
-                </p>
-                <p class="fs-14">
-                    A — Score Disagreement
-                </p>
-                <p class="fs-14">
-                    Example:
-                    “We think it’s 4-3” / “No it’s 3-3”
-                </p>
-
-                <p class="fs-14">
-                    B — Line / Double Bounce Dispute
-                </p>
-                <p class="fs-14">
-                    Example:
-                    Ball in/out, second bounce
-                </p>
-
-                <p class="fs-14">
-                    C — Conduct Issue
-                </p>
-                <p class="fs-14">
-                    Example:
-                    Coaching abuse, shouting, intimidation
-                </p>
-                <p class="fs-14">
-                    Anything else = not valid dispute.
-                </p>
-                <div class="head-rule mt-16 mb-16">PLAYER PROCEDURE (MANDATORY)</div>
-                <p class="fs-14">
-                    Players must follow this order:</p>
-                <p class="fs-14">Stop play immediately</p>
-                <p class="fs-14">Raise hand</p>
-                <p class="fs-14">Call Tournament Controller</p>
-                <p class="fs-14">If you continue playing → dispute void.</p>
-
-                <div class="head-rule mt-16 mb-16">CONTROLLER DECISION TREE</div>
-                <p class="fs-14">
-                    Controller ask ONE question only:</p>
-                <p class="fs-14">
-                    “What was the last point both teams agree on?”
-                </p>
-                <div class="head-rule mt-16 mb-16">CASE A — SCORE DISPUTE</div>
-                <p class="fs-14">
-                    Rule:</p>
-                <p class="fs-14">Return to last agreed score.</p>
-                <p class="fs-14">No replay of previous games.</p>
-                <div class="head-rule mt-16 mb-16">CASE B — LINE / BOUNCE</div>
-                <p class="fs-14">Rule:</p>
-                <p class="fs-14">Point replayed.</p>
-                <p class="fs-14">No debate about who was right.</p>
-                <div class="head-rule mt-16 mb-16">CASE C — CONDUCT</div>
-                <p class="fs-14">Controller gives:</p>
-                <p class="fs-14">Warning → Game Penalty → Match Default</p>
-                <p class="fs-14">No discussion.</p>
-                <div class="head-rule mt-16 mb-16">4) HARD RULES (IMPORTANT)</div>
-                <ul>
-                    <li>No crowd decisions</li>
-                    <li>No video replay</li>
-                    <li>No partner overrule</li>
-                    <li>Decision is final</li>
-                    <li>Delaying argument = time violation</li>
-                </ul>
-                <div class="head-rule mt-16 mb-16">PENALTY SYSTEM</div>
-                <p class="fs-14">(Players quickly learn behavior)</p>
-                <div class="d-flex mt-16">
-                    <div class="first-l">
-                        <strong class="text-brand">Offense</strong>
-                    </div>
-                    <div class="second-l w-100">
-                        <strong class="text-brand">Penalty</strong>
-                    </div>
-                </div>
-                <div class="w-100 line"></div>
-                <div class="d-flex mt-16">
-                    <div class="first-l">First argument escalation
-                    </div>
-                    <div class="second-l w-100">Warning
-                    </div>
-                </div>
-                <div class="w-100 line"></div>
-                <div class="d-flex mt-16">
-                    <div class="first-l">Second
-                    </div>
-                    <div class="second-l w-100">
-                        Golden point awarded
-                    </div>
-                </div>
-                <div class="w-100 line"></div>
-                <div class="d-flex mt-16">
-                    <div class="first-l">Third
-                    </div>
-                    <div class="second-l w-100">
-                        Game penalty
-                    </div>
-                </div>
-                <div class="w-100 line"></div>
-                <div class="d-flex mt-16">
-                    <div class="first-l">Abuse
-                    </div>
-                    <div class="second-l w-100">
-                        Match default
-                    </div>
-                </div>
-
-            </div>
-
+        <a href="tournment-check-in.html" class="menu-list">
+          <i class="ti ti-users"></i>check-in
+        </a>
+        <div>
+          <img src="img/line.svg" alt="" />
         </div>
+        <a href="tournment-matches-a.html" class="menu-list">
+          <i class="ti ti-layout-grid"></i>Matches
+        </a>
+        <div>
+          <img src="img/line.svg" alt="" />
+        </div>
+        <a href="tournment-draw.html" class="menu-list">
+          <i class="ti ti-git-branch"></i>Draw
+        </a>
+      </div>
+
+      <div class="body-section w-100">
+        <div class="menu-top">
+          <a href="tournment-detail.html">OVERVIEW</a>
+          <a href="format.html">FORMAT</a>
+          <a href="rules.html" class="active">RULES</a>
+          <a href="prize.html">PRIZE</a>
+        </div>
+        <div class="p-24 p-lg-48 text-white rules">
+          <h3 class="h2 text-gradient mb-48">RULES</h3>
+          <div class="head-rule mb-16">MATCH FORMAT</div>
+          <ul>
+            <li>One set to 6 games</li>
+            <li>Golden point at deuce</li>
+            <li>6-6 → 7-point tiebreak</li>
+          </ul>
+          <div class="head-rule mt-16 mb-16">WARM-UP</div>
+          <p class="fs-14">Maximum 3 minutes only</p>
+          <div class="head-rule mt-16 mb-16">TIME POLICY</div>
+          <p class="fs-14">Teams must be ready within 5 minutes of call</p>
+          <div class="head-rule mt-16 mb-16">GROUP RANKING TIE BREAK</div>
+          <ol>
+            <li>Matches Won</li>
+            <li>Game Difference</li>
+            <li>Head-to-Head</li>
+            <li>Sudden Death Point</li>
+          </ol>
+          <div class="head-rule mt-16 mb-16">COACHING</div>
+          <p class="fs-14">Allowed only between games</p>
+          <div class="head-rule mt-16 mb-16">INJURY</div>
+          <p class="fs-14">5 minute medical timeout allowed once</p>
+          <div class="head-rule mt-16 mb-16">CONDUCT</div>
+          <p class="fs-14">Unsportsmanlike behavior = game penalty</p>
+          <div class="head-rule mt-16 mb-16">COACHING</div>
+          <p class="fs-14">Allowed only between games</p>
+          <div class="head-rule mt-16 mb-16">FINALS</div>
+          <p class="fs-14">FINALS</p>
+          <div class="head-rule mt-16 mb-16">
+            CHALLEXA OFFICIAL DISPUTE & REFEREE PROTOCOL
+          </div>
+          <i class="fs-14">(Simple, firm, non-negotiable)</i>
+          <p class="fs-14">Your golden principle:</p>
+          <p class="fs-14">Players decide points.</p>
+          <p class="fs-14">Referee decides conflicts.</p>
+          <div class="head-rule mt-16 mb-16">TYPES OF DISPUTES</div>
+          <p class="fs-14">We only recognize 3 official dispute categories</p>
+          <p class="fs-14">A — Score Disagreement</p>
+          <p class="fs-14">Example: “We think it’s 4-3” / “No it’s 3-3”</p>
+
+          <p class="fs-14">B — Line / Double Bounce Dispute</p>
+          <p class="fs-14">Example: Ball in/out, second bounce</p>
+
+          <p class="fs-14">C — Conduct Issue</p>
+          <p class="fs-14">Example: Coaching abuse, shouting, intimidation</p>
+          <p class="fs-14">Anything else = not valid dispute.</p>
+          <div class="head-rule mt-16 mb-16">PLAYER PROCEDURE (MANDATORY)</div>
+          <p class="fs-14">Players must follow this order:</p>
+          <p class="fs-14">Stop play immediately</p>
+          <p class="fs-14">Raise hand</p>
+          <p class="fs-14">Call Tournament Controller</p>
+          <p class="fs-14">If you continue playing → dispute void.</p>
+
+          <div class="head-rule mt-16 mb-16">CONTROLLER DECISION TREE</div>
+          <p class="fs-14">Controller ask ONE question only:</p>
+          <p class="fs-14">“What was the last point both teams agree on?”</p>
+          <div class="head-rule mt-16 mb-16">CASE A — SCORE DISPUTE</div>
+          <p class="fs-14">Rule:</p>
+          <p class="fs-14">Return to last agreed score.</p>
+          <p class="fs-14">No replay of previous games.</p>
+          <div class="head-rule mt-16 mb-16">CASE B — LINE / BOUNCE</div>
+          <p class="fs-14">Rule:</p>
+          <p class="fs-14">Point replayed.</p>
+          <p class="fs-14">No debate about who was right.</p>
+          <div class="head-rule mt-16 mb-16">CASE C — CONDUCT</div>
+          <p class="fs-14">Controller gives:</p>
+          <p class="fs-14">Warning → Game Penalty → Match Default</p>
+          <p class="fs-14">No discussion.</p>
+          <div class="head-rule mt-16 mb-16">4) HARD RULES (IMPORTANT)</div>
+          <ul>
+            <li>No crowd decisions</li>
+            <li>No video replay</li>
+            <li>No partner overrule</li>
+            <li>Decision is final</li>
+            <li>Delaying argument = time violation</li>
+          </ul>
+          <div class="head-rule mt-16 mb-16">PENALTY SYSTEM</div>
+          <p class="fs-14">(Players quickly learn behavior)</p>
+          <div class="d-flex mt-16">
+            <div class="first-l">
+              <strong class="text-brand">Offense</strong>
+            </div>
+            <div class="second-l w-100">
+              <strong class="text-brand">Penalty</strong>
+            </div>
+          </div>
+          <div class="w-100 line"></div>
+          <div class="d-flex mt-16">
+            <div class="first-l">First argument escalation</div>
+            <div class="second-l w-100">Warning</div>
+          </div>
+          <div class="w-100 line"></div>
+          <div class="d-flex mt-16">
+            <div class="first-l">Second</div>
+            <div class="second-l w-100">Golden point awarded</div>
+          </div>
+          <div class="w-100 line"></div>
+          <div class="d-flex mt-16">
+            <div class="first-l">Third</div>
+            <div class="second-l w-100">Game penalty</div>
+          </div>
+          <div class="w-100 line"></div>
+          <div class="d-flex mt-16">
+            <div class="first-l">Abuse</div>
+            <div class="second-l w-100">Match default</div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- script -->
     <script type="text/javascript" src="js/main.js"></script>
-
-</body>
-
+  </body>
 </html>

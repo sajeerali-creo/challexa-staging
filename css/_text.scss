@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 // flag icon
-@import url('https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css');
+@import url("https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css");
 
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   color: var(--black);
 }
 
@@ -14,7 +14,7 @@ body {
   letter-spacing: 0.1em;
   font-family: "Orbitron", sans-serif;
   font-weight: 500;
-  background: linear-gradient(90deg, #9AE600 0%, #FFFFFF 100%);
+  background: linear-gradient(90deg, #9ae600 0%, #ffffff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -26,12 +26,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 
-  background: linear-gradient(
-    90deg,
-    #9AE600,
-    #ffffff,
-    #9AE600
-  );
+  background: linear-gradient(90deg, #9ae600, #ffffff, #9ae600);
   background-size: 200% 100%;
 
   -webkit-background-clip: text;
@@ -59,7 +54,7 @@ body {
   font-weight: 500;
   color: var(--white);
 
-  @media (min-width:992px) {
+  @media (min-width: 992px) {
     font-size: 24px;
   }
 }
@@ -75,13 +70,13 @@ body {
 }
 
 .h3 {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 22px;
   font-weight: 400;
 }
 
 .h4 {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-weight: 300;
 }
@@ -103,7 +98,7 @@ body {
   display: block;
   padding: 8px 16px;
   border-radius: 4px;
-  background: linear-gradient(90deg, #2B41BD 0%, rgba(43, 65, 189, 0) 100%);
+  background: linear-gradient(90deg, #2b41bd 0%, rgba(43, 65, 189, 0) 100%);
   letter-spacing: 2px;
 }
 
@@ -177,49 +172,98 @@ p {
 .text-kana {
   text-transform: full-size-kana;
 }
-.letter-space{
+.letter-space {
   letter-spacing: 2px;
 }
-.font-weight-400{
+.font-weight-400 {
   font-weight: 400;
 }
-.text-orange{
+.text-orange {
   color: #fc9453;
 }
 
 /* Font size utilities (px based) */
 
-.fs-4  { font-size: 4px !important; }
-.fs-6  { font-size: 6px !important; }
-.fs-8  { font-size: 8px !important; }
-.fs-10 { font-size: 10px !important; }
-.fs-12 { font-size: 12px !important; }
-.fs-14 { font-size: 14px !important; }
-.fs-16 { font-size: 16px !important; }
-.fs-18 { font-size: 18px !important; }
-.fs-20 { font-size: 20px !important; }
-.fs-22 { font-size: 22px !important; }
-.fs-24 { font-size: 24px !important; }
-.fs-26 { font-size: 26px !important; }
-.fs-28 { font-size: 28px !important; }
-.fs-30 { font-size: 30px !important; }
-.fs-32 { font-size: 32px !important; }
-.fs-34 { font-size: 34px !important; }
-.fs-36 { font-size: 36px !important; }
-.fs-38 { font-size: 38px !important; }
-.fs-40 { font-size: 40px !important; }
-.fs-42 { font-size: 42px !important; }
-.fs-44 { font-size: 44px !important; }
-.fs-46 { font-size: 46px !important; }
-.fs-48 { font-size: 48px !important; }
+.fs-4 {
+  font-size: 4px !important;
+}
+.fs-6 {
+  font-size: 6px !important;
+}
+.fs-8 {
+  font-size: 8px !important;
+}
+.fs-10 {
+  font-size: 10px !important;
+}
+.fs-12 {
+  font-size: 12px !important;
+}
+.fs-14 {
+  font-size: 14px !important;
+}
+.fs-16 {
+  font-size: 16px !important;
+}
+.fs-18 {
+  font-size: 18px !important;
+}
+.fs-20 {
+  font-size: 20px !important;
+}
+.fs-22 {
+  font-size: 22px !important;
+}
+.fs-24 {
+  font-size: 24px !important;
+}
+.fs-26 {
+  font-size: 26px !important;
+}
+.fs-28 {
+  font-size: 28px !important;
+}
+.fs-30 {
+  font-size: 30px !important;
+}
+.fs-32 {
+  font-size: 32px !important;
+}
+.fs-34 {
+  font-size: 34px !important;
+}
+.fs-36 {
+  font-size: 36px !important;
+}
+.fs-38 {
+  font-size: 38px !important;
+}
+.fs-40 {
+  font-size: 40px !important;
+}
+.fs-42 {
+  font-size: 42px !important;
+}
+.fs-44 {
+  font-size: 44px !important;
+}
+.fs-46 {
+  font-size: 46px !important;
+}
+.fs-48 {
+  font-size: 48px !important;
+}
 
-.time-big-mob{
-  font-size: 20vw!important;
-  @media (min-width:767px) {
-    font-size: 24px!important;
+.time-big-mob {
+  font-size: 20vw !important;
+  @media (min-width: 767px) {
+    font-size: 24px !important;
   }
 }
-.big-number{
+.big-number {
   font-size: 60px;
   color: #60615e;
+}
+.text-danger {
+  color: #ea6c73;
 }
