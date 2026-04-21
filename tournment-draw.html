@@ -98,12 +98,6 @@
         <a href="tournment-draw.html" class="menu-list active">
           <i class="ti ti-git-branch"></i>Draw
         </a>
-        <div>
-          <img src="img/line.svg" alt="" />
-        </div>
-        <a href="qualification-a.html" class="menu-list">
-          <i class="ti ti-user-circle"></i>Qualifieds
-        </a>
       </div>
     </div>
 
@@ -157,12 +151,6 @@
         <a href="tournment-draw.html" class="menu-list active">
           <i class="ti ti-git-branch"></i>Draw
         </a>
-        <div>
-          <img src="img/line.svg" alt="" />
-        </div>
-        <a href="qualification-a.html" class="menu-list">
-          <i class="ti ti-user-circle"></i>Qualifieds
-        </a>
       </div>
 
       <div class="body-section w-100">
@@ -195,11 +183,16 @@
                   <span class="player-name">BHAVESH</span>
                 </div>
                 <!-- <div class="score-badge winner text-brand">6</div> -->
-                <div class="score-add">
-                  <a href="#" class="btn-small report-score-btn">Report</a>
-                </div>
               </div>
-              <div class="round-header text-white opacity-50 fs-12">R16-01</div>
+              <div
+                class="round-header text-white fs-12 justify-content-between d-flex"
+              >
+                R16-01
+                <a href="#" class="btn-small report-score-btn btn-primary"
+                  >Report</a
+                >
+              </div>
+
               <div class="match-up-card">
                 <div class="player-slot">
                   <img
@@ -218,9 +211,6 @@
                   <span class="player-name">VISH</span>
                 </div>
                 <!-- <div class="score-badge winner text-brand">6</div> -->
-                <div class="score-add">
-                  <a href="#" class="btn-small report-score-btn">Report</a>
-                </div>
               </div>
             </div>
 
@@ -755,9 +745,19 @@
         <div class="score-section">
           <div class="d-flex justify-content-between">
             <label>TEAM</label>
-            <label>SOCRE</label>
+            <label>SCORE</label>
           </div>
 
+          <div class="score-row">
+            <div class="team-info">
+              <span class="team-id">F3</span>
+              <div class="avatars">
+                <img src="img/head-lady.avif" alt="p1" />
+                <img src="img/head-lady.avif" alt="p2" />
+              </div>
+            </div>
+            <input type="number" class="score-input" value="3" />
+          </div>
           <div class="score-row">
             <div class="team-info">
               <span class="team-id">F3</span>
