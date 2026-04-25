@@ -3529,8 +3529,8 @@ input:focus {
   }
 }
 .tmx-player-lg img {
-  width: 50px !important;
-  height: 50px !important;
+  width: 70px !important;
+  height: 70px !important;
   flex: 0;
 }
 @media (min-width: 992px) {
