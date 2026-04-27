@@ -1284,6 +1284,26 @@ p {
     width: 75%; /* change percentage here */
   }
 }
+.empty-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  text-align: center;
+  padding-bottom: 20px;
+  display: flex;
+}
+.empty-container .div-icon {
+  opacity: 0.2;
+  margin-bottom: 16px;
+}
+.empty-container .div-icon img {
+  height: 68px;
+}
+
 /* BACKGROUND GLOW */
 .reg-section {
   min-height: 100vh;
@@ -3990,6 +4010,7 @@ input:focus {
   background-color: #000;
   display: block;
   z-index: 9;
+  border-bottom: 1px solid #262626;
 }
 @media (min-width: 992px) {
   .inner-head {
